@@ -48,6 +48,25 @@ a {
     line-height: 28px;
 }
 
+#footer {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 33px;
+}
+
 #footer > a + a {
     margin-left: 28px;
+}
+
+#footer > #line {
+    width: 568px;
+    height: 0px;
+    border: 1px solid #ECEFF2;
+    margin: 0px auto 8px;
+}
+
+#balls {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
