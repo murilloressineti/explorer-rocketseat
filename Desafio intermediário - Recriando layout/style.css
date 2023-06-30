@@ -1,1 +1,45 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --text-color-0: #3F3D56;
+    --text-color-1: #EE24FF;
+    --text-color-2: #828282;
+    --text-color-3: #ECEFF2;
+}
+
+main {
+    margin: 64px auto
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    color: var(--text-color-0);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+h1 > span {
+    color: var(--text-color-1);
+    font-weight: bold;
+}
+
+p {
+    color: var(--text-color-2);
+
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 100;
+}
+
+.destaque {
+    color: var(--text-color-0);
+    font-weight: bold;
+}
