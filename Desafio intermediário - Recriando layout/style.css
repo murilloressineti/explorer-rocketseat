@@ -79,9 +79,10 @@ footer > a + a {
     margin-left: 42px;
 }
 
-#wave {
-    position: static;
-    bottom: 0px;
 
-    margin-top: 40px;
+#wave {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    margin-top: 50px;
 }
