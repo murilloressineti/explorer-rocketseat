@@ -9,24 +9,26 @@ body {
   }
   
   .page {
-    width: 600px;
+    width: 1000px;
     margin: 0 auto;
     padding-top: 65px;
   }
   
   nav {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
   
-    margin-bottom: 15px;
+    margin-bottom: 55px;
   }
   
   ul {
+    font-family: 'Mulish', sans-serif;
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 48px;
   }
   
   a {
@@ -42,13 +44,15 @@ body {
     font-weight: bold;
     opacity: 1;
   }
-  
-  h1,
-  ul {
-    font-family: "Mulish", sans-serif;
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   h1 {
+    font-family: "Mulish", sans-serif;
     font-size: 49px;
     line-height: 56px;
     color: #1f1534;
@@ -62,6 +66,10 @@ body {
     color: #89c5cc;
     font-weight: bold;
   }
+
+  section {
+    width: 438px;
+  }
   
   section p {
     font-size: 14px;
@@ -74,14 +82,16 @@ body {
   button {
     color: white;
     font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
   
     background: #69B99D;
     border: 0;
-    padding: 0 50px 30px;
+    padding: 14px 32px 15px 32px;
   
     display: flex;
-    justify-content: space-around;
-    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
   
     border-radius: 4px;
   
@@ -99,6 +109,7 @@ body {
     text-align: center;
   
     margin-top: 80px;
+    margin-bottom: 30px;
   }
   
   footer a {
@@ -106,7 +117,7 @@ body {
   }
   
   #balls {
+      position: fixed;
       bottom: 0;
       right: 0;
   }
-  
