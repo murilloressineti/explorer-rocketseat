@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+        </header>
+
+        <form id="my-form">
+            <fieldset>
+                <legend>Informações pessoais</legend>
+
+                <div class="input-wrapper">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="surname">Sobrenome</label>
+                    <input type="text" id="surname">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="email">Email <span>(digite um email válido)</span></label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="input wrapper">
+                    <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                    <input type="password" id="password">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações do mentor</legend>
+
+                <div class="input-wrapper">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Seus horários disponíveis</legend>
+
+                <legend>Primeira mentoria</legend>
+                <div class="input-wrapper">
+                    <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="even-begin">Das</label>
+                    <input type="time"id="even-begin">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-end">Ate</label>
+                    <input type="time"id="event-end">
+                </div>
+
+                <legend>Segunda mentoria</legend>
+                <div class="input-wrapper">
+                    <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="even-begin">Das</label>
+                    <input type="time"id="even-begin">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-end">Ate</label>
+                    <input type="time"id="event-end">
+                </div>
+            </fieldset>
+        </form>
+
+        <footer>
+            <input form="my-form" class="button"  type="submit" value="Salvar">
+        </footer>
+    </div>
+</body>
+</html>
