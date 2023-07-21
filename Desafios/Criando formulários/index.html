@@ -23,7 +23,7 @@
 
                 <div class="input-wrapper">
                     <label for="name">Nome</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" required>
                 </div>
 
                 <div class="input-wrapper">
@@ -36,7 +36,7 @@
                     <input type="email" id="email">
                 </div>
 
-                <div class="input wrapper">
+                <div class="input-wrapper">
                     <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
                     <input type="password" id="password">
                 </div>
@@ -46,7 +46,7 @@
                 <legend>Informações do mentor</legend>
 
                 <div class="input-wrapper">
-                    <label for="name">Nome</label>
+                    <label for="name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
                     <input type="text" id="name">
                 </div>
             </fieldset>
@@ -54,7 +54,7 @@
             <fieldset>
                 <legend>Seus horários disponíveis</legend>
 
-                <legend>Primeira mentoria</legend>
+                <legend class="legend-2">Primeira mentoria</legend>
                 <div class="input-wrapper">
                     <label for="date">Data <span>(DD/MM/AAAA)</span></label>
                     <input type="date" id="date">
@@ -70,7 +70,7 @@
                     <input type="time"id="event-end">
                 </div>
 
-                <legend>Segunda mentoria</legend>
+                <legend class="legend-2">Segunda mentoria</legend>
                 <div class="input-wrapper">
                     <label for="date">Data <span>(DD/MM/AAAA)</span></label>
                     <input type="date" id="date">
@@ -89,7 +89,7 @@
         </form>
 
         <footer>
-            <input form="my-form" class="button"  type="submit" value="Salvar">
+            <input form="my-form" class="button"  type="submit" value="SALVAR">
         </footer>
     </div>
 </body>
