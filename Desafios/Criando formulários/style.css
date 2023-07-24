@@ -143,6 +143,26 @@ fieldset > legend {
     margin-bottom: 16px;
 }
 
+.col-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.col-2 > div:nth-child(1) {
+    width: 100%;
+}
+
+.col-3-primeira-mentoria,
+.col-3-segunda-mentoria {
+    display: flex;
+    gap: 20px;
+}
+
+.col-3-primeira-mentoria > div:nth-child(1),
+.col-3-segunda-mentoria > div:nth-child(1) {
+    width: 100%;
+}
+
 footer {
     background: var(--color-1);
     height: 160px;
