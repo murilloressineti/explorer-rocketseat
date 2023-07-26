@@ -20,6 +20,7 @@ body {
 
 main {
     max-width: 33rem;
+    margin: 0 auto;
 }
 
 h1 {
@@ -31,7 +32,7 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-main > p:first-child {
+main p:first-child {
     color: #7158EF;
 
     letter-spacing: 3px;
@@ -75,6 +76,9 @@ ul li {
     gap: 3.8rem;
 }
 
+ul li + li {
+    margin-top: 3.2rem;
+}
 
 ul li span {
     color: #090039;
@@ -82,4 +86,28 @@ ul li span {
     font-weight: 800;
     line-height: 8.0rem;
     letter-spacing: -2px;
+
+    min-width: 4.5rem;
+}
+
+@media (min-width: 700px){
+    body {
+        padding: 8rem;
+    }
+    
+    main {
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+
+    main div {
+        max-width: 484px;
+    }
+
+    ul li {
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+    }
 }
