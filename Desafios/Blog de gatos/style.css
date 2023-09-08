@@ -1,2 +1,90 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-base-white: white;
+    --color-01: #F4FCFF;
+    --color-02: #387E96;
+    --color-03: #121214;
+
+    font-family: 'Mulish', sans-serif;
+}
+
+html, body, input {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--color-base-white);
+    color: var(--color-03);
+}
+
+#app {
+    max-width: 43rem;
+    margin-inline: auto;
+}
+
+header {
+    background-color: var(--color-02);
+    display: flex;
+    flex-direction: row;
+
+    gap: 2.5rem;
+
+}
+
+.logo {
+    background-color: var(--color-01);
+    width: 4rem;
+    height: 4rem;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 1.6rem;
+
+    background-color: var(--color-01);
+    opacity: 50%;
+
+    border: 0;
+    border-radius: .6rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.input-wrapper input::placeholder {
+    color: var(--color-base-gray-500);
+    opacity: 0.56;
+}
+
+.avatar {
+    width: 4.2rem;
+    height: 4.2rem;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
