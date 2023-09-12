@@ -14,7 +14,8 @@
     --color-base-white: white;
     --color-01: #F4FCFF;
     --color-02: #065E7C;
-    --color-03: #121214;
+    --color-03: #387E96;
+    --color-04: #121214;
 
     font-family: 'Mulish', sans-serif;
 }
@@ -26,7 +27,7 @@ html, body, input {
 body {
     font-size: 1.6rem;
     background-color: var(--color-base-white);
-    color: var(--color-03);
+    color: var(--color-04);
 }
 
 #app {
@@ -122,6 +123,8 @@ section h1 {
     flex-direction: row;
     align-items: center;
     gap: 1.2rem;
+
+    padding-bottom: 4rem;
 }
 
 .social {
@@ -139,4 +142,35 @@ section h1 {
 .social img {
     margin: auto;
     padding: 1.2rem;
+}
+
+section p {
+    color: var(--color-04);
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+section h2 {
+    padding-top: 3.4rem;
+    padding-bottom: 3.2rem;
+}
+
+section figure {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+    padding-bottom: 3rem;
+}
+
+figcaption p {
+    width: 25rem;
+}
+
+footer {
+    color: var(--color-01);
+    background-color: var(--color-03);
+    text-align: center;
+
+    padding: 1.6rem;
 }
