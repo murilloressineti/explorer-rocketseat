@@ -48,7 +48,7 @@ header {
     height: 7.2rem;
 }
 
-.logo {
+.logo a {
     background-color: var(--color-01);
     width: 4rem;
     height: 4rem;
@@ -144,6 +144,13 @@ section h1 {
     padding: 1.2rem;
 }
 
+.social img:hover {
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(-2deg);
+
+    cursor: pointer;
+}
+
 section p {
     color: var(--color-04);
     line-height: 2.5rem;
@@ -163,6 +170,20 @@ section figure {
     padding-bottom: 3rem;
 }
 
+section figure img {
+    width: 100%;
+    object-fit: cover;
+
+    transition: all 200ms ease-out;
+
+    display: block;
+}
+
+section figure img:hover {
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(-2deg);
+}
+
 figcaption p {
     width: 25rem;
 }
@@ -173,4 +194,41 @@ footer {
     text-align: center;
 
     padding: 1.6rem;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(var(--startY));
+    }
+}
+
+header {
+    --startY: -100%;
+    animation: move .2s;
+}
+
+main .container img {
+    --startY: -100%;
+    animation: move .2s;
+}
+
+footer {
+    --startY: 100%;
+    animation: move .2s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.item {
+    --delay: .4s;
+    animation: appear .4s var(--delay) backwards;
 }
