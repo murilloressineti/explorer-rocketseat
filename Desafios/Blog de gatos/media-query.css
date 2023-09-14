@@ -21,10 +21,22 @@
         padding: 4rem auto 4rem;
     }
 
-    .article img {
+    .cat {
         background-image: url(../assets/imagem-gato-grande.jpg);
     }
 
-    img#phone {display: none;}
-    img#desktop {display: block;}
+    .cat img#phone {
+        display: none;
+    }
+
+    .cat img#desktop {
+        display: block;
+    }
+
+    .tittle {
+        display: flex;
+        flex-direction: row;
+
+        gap: 37rem;
+    }
 }

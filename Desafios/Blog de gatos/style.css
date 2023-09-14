@@ -105,9 +105,9 @@ form {
     border-radius: 50%;
 }
 
-.article img {
+.cat {
     background-image: url(assets/imagem-gato.jpg) no-repeat;
-    
+
     border-radius: 0px 0px 5px 5px;
 
     padding-bottom: 3rem;
