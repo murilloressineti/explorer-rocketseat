@@ -105,7 +105,9 @@ form {
     border-radius: 50%;
 }
 
-main .container img {
+.article img {
+    background-image: url(assets/imagem-gato.jpg) no-repeat;
+    
     border-radius: 0px 0px 5px 5px;
 
     padding-bottom: 3rem;
@@ -232,3 +234,6 @@ footer {
     --delay: .4s;
     animation: appear .4s var(--delay) backwards;
 }
+
+img#phone {display: cover;}
+img#desktop {display: none;}
