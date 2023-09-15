@@ -5,7 +5,8 @@
     }
 
     main {
-        padding: 4rem 0 4rem;
+        padding-top: 4rem;
+        max-width: 80rem;
     }
 
     main .container {
@@ -15,10 +16,6 @@
         grid-template-columns: 2fr 1fr;
         
         gap: 3.4rem;
-    }
-
-    .article {
-        padding: 4rem auto 4rem;
     }
 
     .cat {
