@@ -7,7 +7,7 @@ function createPhrases(){
     console.log('Revisão é a mãe do aprendizado')
 }
 
-//Executar a função 
+//Executar a função / chamar a função  
 createPhrases()
 
 console.log('Fim do programa')
