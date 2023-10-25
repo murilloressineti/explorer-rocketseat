@@ -77,3 +77,28 @@ console.log(['a', 'b', 'c', 'd'].length)
 
 let caracteres = 'manipulação'
 console.log(Array.from(caracteres)) // cada um dos caractes virou um elemento de um array
+
+// Manipulando Arrays
+
+let techs = ['html', 'css', 'js']
+
+// adicionar um item no fim
+techs.push('nodejs')
+
+// adicionar no começo
+techs.unshift('sql')
+
+// remover do fim
+techs.pop()
+
+// remover do começo
+techs.shift
+
+// pegar somente alguns elementos do array
+console.log(techs.slice(1, 3)) //primeiro número é a posição que quer excluir, segundo número é até qual posição quer ir
+
+// remover 1 ou mais itens em qualuqer posição do array
+techs.splice(1, 1) //primeiro número é o index (quantidade de elementos), segundo número é quantos quer remover
+
+// encontrar a posição de um elemento no array
+let index = techs.indexOf('css')
