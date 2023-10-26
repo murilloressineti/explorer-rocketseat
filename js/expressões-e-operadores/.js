@@ -7,7 +7,7 @@
         Ternary   
 */
 
-// Expressions: qualquer linha de código que resolve alguma coisa. Toda expressão pode ou não terminar com ;
+// Expressions: qualquer linha de código que resolve alguma coisa. Toda expressão pode ou não terminar com:
 
 let number = 1;
 
@@ -50,7 +50,7 @@ delete person.age
 console.log(person)
 
 
-    //Operadores Aritiméticos:
+//Operadores Aritiméticos:
 
     // Multiplicação
     console.log(3 * 5)
@@ -94,35 +94,109 @@ console.log(total)
 let one = 1
 let two = 2
 
-// == igual a
-console.log( two == 1) // False
-console.log( one == '1') // True
+    // == igual a
+    console.log( two == 1) // False
+    console.log( one == '1') // True
 
-// != diferente de
+    // != diferente de
 
-console.log(one != two) // True
-console.log(one != 1) // False
-console.log(one != '1') // False
+    console.log(one != two) // True
+    console.log(one != 1) // False
+    console.log(one != '1') // False
 
-// === estritamente igual a 
-console.log(one === '1') // False
-console.log(one === 1) // True
+    // === estritamente igual a 
+    console.log(one === '1') // False
+    console.log(one === 1) // True
 
-// === estritamente diferente de 
-console.log( two !== '2') // True
-console.log( two !== 2) // False
+    // === estritamente diferente de 
+    console.log( two !== '2') // True
+    console.log( two !== 2) // False
 
-// > Maior que
-console.log(one > two) // False
+    // > Maior que
+    console.log(one > two) // False
 
-// >= Maior igual a 
-console.log(one >= 1) // True
-console.log(two >= 1) // False
+    // >= Maior igual a 
+    console.log(one >= 1) // True
+    console.log(two >= 1) // False
 
-// < Menor que
-console.log(one < two) // True
+    // < Menor que
+    console.log(one < two) // True
 
-// <= Menor igual a
-console.log(one <= two) // True
-console.log(one <= 1) // True
-console.log(one <= 0) // False
+    // <= Menor igual a
+    console.log(one <= two) // True
+    console.log(one <= 1) // True
+    console.log(one <= 0) // False
+
+// Operadores de Atribuição (Assigment)
+let x
+
+    // Assigment 
+    x = 1
+
+    // addition assigment
+    x += 2 // Essa operação é igual a: x = x + 2
+
+    // subtrcation assigment
+    x -= 2 // Essa operação é igual a: x = x - 2
+
+    // mulltiplication assigment
+    x *= 2 // Essa operação é igual a: x = x * 2
+
+    // division assigment
+    x /= 2 // Essa operação é igual a: x = x / 2
+
+    // remainder
+    x %= 2
+
+    // xponetiation 
+    x **= 2
+
+// Operadores lógicos (logical operators)
+
+    // - 2 valores booleanos, quando verificados, resultará em verdadeiro ou falso
+
+    let pao = true
+    let queijo = true
+
+    // AND &&
+    console.log(pao && queijo) // true - se uma das variaveis for false a resposta é false
+
+    // OR ||
+
+    console.log(pao || queijo) // true - qualquer um que for verdadeiro é true
+
+    // NOT !
+    console.log(!pao)  //Negação - inverte o valor dela, troca de true para false ou de false para true
+
+// Operador condicional (Ternário)
+
+//Dependendo da condição, nós recebemos valores diferentes 
+
+// - Condição então valor 1 se não valor 2
+// - condition ? value1 : value2
+
+    // Exemplos
+    //Café da manhã top
+
+    let bread = true
+    let cheese = false
+
+    const niceBreakfast = bread && cheese ? 'Café top' : 'Café ruim'
+
+    console.log(niceBreakfast)
+
+    //Maior de 18
+
+    let idade = 16
+    const canDrive = idade >= 18 ? 'can drive' : 'can not drive'
+    console.log(canDrive)
+
+// Operador de string (String operator)
+
+    // comparision (comparação)
+    console.log('a' == 'b') // false
+
+    // concatenatition (concatenação) - retorna a união de duas strings
+    let alpha = 'alhpha'
+    alpha += 'bet'
+    console.log(alpha + 345) // alphabet345
