@@ -200,3 +200,61 @@ let x
     let alpha = 'alhpha'
     alpha += 'bet'
     console.log(alpha + 345) // alphabet345
+
+// Type conversion (typecasting) vs Type coersion
+
+// Type conversion - Eu transformando um tipo de dado para outro / Type Coersion é o JS transformando um tipo de dado para outro
+
+console.log(Number('9' + 5))
+
+/*
+
+FALSY
+    Quando um valor é considero False em contextos onde um booleano é obrigatório (condicionais e loops)
+
+    São considerados false:
+    0
+    -0
+    ""
+    null
+    undefined
+    NaN
+
+*/
+
+console.log( 0 ? 'verdadeiro' : 'false') //acontece o type coersion e é convertido para false
+
+/*
+THUTHY
+    Quando um valor é considerado true em contextos onde um booleano é obrigatório (condicionais e loops)
+
+    São considerados true:
+    {}
+    []
+    1
+    3.23
+    "0"
+    "false"
+    -1
+    Infinity
+    -Infinity
+*/
+
+console.log( {} ? 'verdadeiro' : 'false') //acontece o type coersion e é convertido para true
+
+/* Operator precedence - Precedência de Operadores
+
+    Ordem de precedência:
+
+    - grouping                  ()
+    - negação e incremento      ! ++ --
+    - multiplicação e divisão   * /
+    - adição e subtração        + -
+    - relacional                < <= > >=c
+    - igualdade                 == != === !==
+    - AND                       &&
+    - OR                        ||
+    - condicional               ?:
+    - assigment (atribuição )   = += -= *=
+*/
+
