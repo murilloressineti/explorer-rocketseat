@@ -7,7 +7,7 @@
         Ternary   
 */
 
-// Expressions: qualquer linha de código que resolve alguma coisa. Toda expressão pode ou não terminar com:
+// Expressions: qualquer linha de código que resolve alguma coisa. Toda expressão pode ou não terminar com ;
 
 let number = 1;
 
