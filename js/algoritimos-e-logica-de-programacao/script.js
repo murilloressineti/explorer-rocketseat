@@ -1,28 +1,33 @@
 /*
-    Capturar dois números e fazer as operações matemáticas de:
-    - soma
-    - subtração
-    - multiplicação
-    - divisão
-    - resto da divisão
-    E para cada operação mostrar um alerta com o resultado
+    Solicitar o nome do aluno e as 3 notas do bimestre para calcular a média daquele aluno.
+
+    A média possitiva deverá ser maior que 6.
+
+    Se o aluno passou no bimestre, dar os parábens.
+
+    Se o aluno não passou no bimestre, motivar o aluno a dar seu melhor na prova de recuperação
+
+    Em ambos os casos, mostre uma mensagem com o nome do aluno e a nota.
 */
 
-alert('Digite 2 números para saber os resultados de: soma, subtração, multiplicação, divisão e resto da divisão')
-let NumberOne = prompt('Digite o primeiro número: ')
-let NumberTwo = prompt('Digite o segundo número:')
+let student = prompt('Nome do aluno(a): ')
+let noteOne = prompt('Digite a 1ª nota:')
+let noteTwo = prompt('Digite a 2ª nota: ')
+let noteThree = prompt('Digite a 3ª nota: ')
 
-NumberOne = Number(NumberOne)
-NumberTwo = Number(NumberTwo)
+noteOne = Number(noteOne)
+noteTwo = Number(noteTwo)
+noteThree = Number(noteThree)
 
-const sum = NumberOne + NumberTwo
-const sub = NumberOne - NumberTwo
-const mult = NumberOne * NumberTwo
-const div = NumberOne / NumberTwo
-const rest = NumberOne % NumberTwo
+let average = (noteOne + noteTwo + noteThree ) / 3
 
-alert(`Soma: ${sum}`)
-alert(`Subtração: ${sub}`)
-alert(`Multiplicação: ${mult}`)
-alert(`Divisão: ${div}`)
-alert(`Resto da divisão: ${rest}`)
+average = average.toFixed(2)
+
+let blue = average >= 6 
+let red = average < 6
+
+if(blue){
+    alert(`Parabéns ${student}! Você foi aprovado no bimestre com a média ${average}.`)
+} else{
+    alert(`${student}, infelizmente ficou de recuperação, a média foi ${average}. Estude para ser aprovado na recuperação.`)
+}
