@@ -1,31 +1,53 @@
 /*
-    Jogo da adivinhação
+    Faça um programa que tenha um menu e apresente a seguinte mensagem:
+  
+    Olá usuário! Digite o número da opção desejada
 
-    Apresente a mensagem ao usuário:
-    "Advinhe o número que estou pensando? Está entre 0 e 10"
+    1. Cadastrar um item na lista
+    2. Mostrar itens cadastrados
+    3. Sair do programa
+  
+    --- 
+    O programa deverá capturar o número digitado pelo usuário e mostrar o seguintes cenários:
 
-    Crie uma lógica para gerar um número aleatório e verificar se o número digitado é o mesmo que o aleatório gerado pelo sistema.
-
-    Enquanto o usuário não advinhar o número, mostre a mensagem: "Erro, tente novamente:"
-
-    Caso o usuário acerte o número, apresentar a mensagem:
-    "Parabéns! Você advinhou o número em x tentativas"
-
-    Substitua o 'x' da mensagem, pelo número de tentativas
+    Caso o usuário digite 1, ele poderá cadastrar um item em uma lista
+    Caso o usuário digite 2, ele poderá ver os itens cadastrados
+        Se não houver nenhum item cadastrado, mostrar a mensagem: 
+        "Não existem itens cadastrados"
+    Caso o usuário digite 3, a aplicação deverá ser encerrada.
 */
 
-let attempt = prompt('Advinhe o número que estou pensando? Está entre 0 e 10')
-const generator = Math.round(Math.random() * 10)
+let user = prompt('Olá! Digite o seu nome:')
 
-let attempts = 1
+let option
+let items = []
 
-while (Number(attempt) != generator) {
-    attempt = prompt('Erro, tente novamente:')
-    attempts++
-} 
+while(option != 3){
 
-if(attempts > 1){
-    alert(`Parabéns! Pensei no número ${generator}. Você advinhou o número em ${attempts} tentativas.`)
-} else {
-    alert(`Parabéns! Pensei no número ${generator}. Você advinhou o número em ${attempts} tentativa.`)
+    option = Number(prompt(`${user}, digite a opção desejada:
+    1. Cadastrar um item na lista
+    2. Mostrar itens cadastrados
+    3. Sair do programa
+`))
+
+switch(option){
+    case 1:
+        let item = prompt('Digite o nome do item:')
+        items.push(item)
+    break
+
+    case 2:
+        if(items.length == 0){
+            alert("Não existem itens cadastrados")
+        } else {
+            alert(items)
+        }
+    break
+
+    case 3:
+    break
+
+    default:
+        alert("Opção inválida. Tente novamente")
+}
 }
