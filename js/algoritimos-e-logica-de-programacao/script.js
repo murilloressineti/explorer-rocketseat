@@ -1,53 +1,34 @@
-/*
-    Faça um programa que tenha um menu e apresente a seguinte mensagem:
-  
-    Olá usuário! Digite o número da opção desejada
+/* 
+  Crie uma lista de pacientes
 
-    1. Cadastrar um item na lista
-    2. Mostrar itens cadastrados
-    3. Sair do programa
-  
-    --- 
-    O programa deverá capturar o número digitado pelo usuário e mostrar o seguintes cenários:
+  Cada paciente dentro da lista, deverá conter:
+    nome
+    idade
+    peso
+    altura
 
-    Caso o usuário digite 1, ele poderá cadastrar um item em uma lista
-    Caso o usuário digite 2, ele poderá ver os itens cadastrados
-        Se não houver nenhum item cadastrado, mostrar a mensagem: 
-        "Não existem itens cadastrados"
-    Caso o usuário digite 3, a aplicação deverá ser encerrada.
+  Escreva uma lista contendo o nome dos pacientes suas idades, alturas e pesos.
 */
 
-let user = prompt('Olá! Digite o seu nome:')
+const patients = [
+    {
+        name: 'Luiz',
+        age: 20,
+        weigth: 100,
+        heigth:190,
+    },
 
-let option
-let items = []
-
-while(option != 3){
-
-    option = Number(prompt(`${user}, digite a opção desejada:
-    1. Cadastrar um item na lista
-    2. Mostrar itens cadastrados
-    3. Sair do programa
-`))
-
-switch(option){
-    case 1:
-        let item = prompt('Digite o nome do item:')
-        items.push(item)
-    break
-
-    case 2:
-        if(items.length == 0){
-            alert("Não existem itens cadastrados")
-        } else {
-            alert(items)
-        }
-    break
-
-    case 3:
-    break
-
-    default:
-        alert("Opção inválida. Tente novamente")
-}
-}
+    {
+        name: 'Alexandra',
+        age: 27,
+        weigth: 70,
+        heigth: 170,
+    },
+    
+    {
+        name: 'Carlos',
+        age: 42,
+        weigth: 90,
+        heigth: 180,
+    },
+]
