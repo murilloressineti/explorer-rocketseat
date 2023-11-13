@@ -2,12 +2,12 @@ const students = [
     {
         name: 'João',
         note1: 6,
-        note2: 6
+        note2: 6,
     },
     {
         name: 'Letícia',
         note1: 10,
-        note2: 9
+        note2: 9,
     },
     {
         name: 'Diego',
@@ -17,7 +17,7 @@ const students = [
     {
         name: 'Julia',
         note1: 6,
-        note2: 5
+        note2: 5,
     },
 ]
 
