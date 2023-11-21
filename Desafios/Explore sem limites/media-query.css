@@ -5,9 +5,9 @@
         align-items: center;
         flex-direction: row-reverse;
         justify-content: center;
-
-        padding: 0 3rem 10rem;
-        max-height: 83.6rem;
+        
+        padding: 0 2rem 10rem 5rem;
+        max-height: 85rem;
     }
 
     header img {
@@ -16,16 +16,16 @@
     }
 
     .tittle{
-        margin-top: 30rem;
+        margin-top: 15rem;
     }
 
     h1 {
-        font-size: 5.8rem;
+        font-size: 5rem;
         font-weight: 900;
     }
 
     h2 {
-        font-size: 3.2rem;
+        font-size: 3rem;
         font-weight: 600;
         margin-bottom: 17.9rem;
     }
