@@ -8,7 +8,6 @@ Bootcamp promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
 <p align="center">
   <a href="https://www.rocketseat.com.br/">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://www.rocketseat.com.br/">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://www.rocketseat.com.br/">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/murilloressineti/explorer-rocketseat/blob/main/LICENSE">Licença</a>
 </p>
 
