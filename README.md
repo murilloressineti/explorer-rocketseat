@@ -17,7 +17,7 @@ Bootcamp promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
 
 <br>
 
-## 🚀 Tecnologias
+## 🛠 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
