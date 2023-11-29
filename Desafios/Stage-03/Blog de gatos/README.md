@@ -18,7 +18,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![Blog-de-gatos-Screenshot](https://github.com/murilloressineti/explorer-rocketseat/assets/125047522/bf29e59a-44ed-4b99-921e-4dc4cef9aeb3)
 
 
-
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT.
