@@ -13,7 +13,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 
-
 ## 💻 Projeto
 
 ![Rocket sect-Screenshot](https://github.com/murilloressineti/explorer-rocketseat/assets/125047522/ec4c3617-79e0-4331-9ee9-205529bd2604)
