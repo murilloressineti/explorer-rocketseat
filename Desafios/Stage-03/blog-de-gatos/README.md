@@ -1,7 +1,8 @@
 <h1 align="center"> Blog de Gatos </h1>
 
 <p align="center">
-Desafio do Stage 03 (Avançando no HTML e CSS) do curso Explorer da Rocketseat. Consiste em criar um blog trabalhando conceitos visto durante o módulo, entre eles: responsividade, flex box e animações em CSS.
+Desafio do Stage 03 (Avançando no HTML e CSS) do curso Explorer da Rocketseat.<br>
+Conforme layout feito no Figma, consiste em recriar um blog, trabalhando conceitos visto durante o módulo, entre eles: responsividade, flex box e animações em css.
 </p>
 
 <br>
@@ -16,7 +17,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 ![Blog-de-gatos-Screenshot](https://github.com/murilloressineti/explorer-rocketseat/assets/125047522/bf29e59a-44ed-4b99-921e-4dc4cef9aeb3)
-
 
 
 ## 📝 Licença

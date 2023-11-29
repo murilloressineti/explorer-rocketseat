@@ -1,7 +1,8 @@
-<h1 align="center"> Corrigindo Bugs </h1>
+<h1 align="center"> Criando Formulários </h1>
 
 <p align="center">
-Desafio do Stage 02 (Introdução ao HTML e CSS) do curso Explorer da Rocketseat. Consiste em receber um código embaralhado e organizar os elementos para que o desafio seja realizado. 
+Desafio do Stage 03 (Avançando no HTML e CSS) do curso Explorer da Rocketseat.<br>
+Projeto feito para criação de um formulário online com base no layout apresentado previamente no Figma.
 </p>
 
 <br>
@@ -15,7 +16,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-![Móveis customizados-Screenshot](https://github.com/murilloressineti/explorer-rocketseat/assets/125047522/4b3d5d3f-83ec-404a-9f81-7a9b1d01f622)
+![Mentoria-Screenshot](https://github.com/murilloressineti/explorer-rocketseat/assets/125047522/740793e3-5d46-4bbd-9e9d-2ebada9c0c4c)
 
 
 ## 📝 Licença
