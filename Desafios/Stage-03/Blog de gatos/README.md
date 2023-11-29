@@ -1,7 +1,8 @@
 <h1 align="center"> Blog de Gatos </h1>
 
 <p align="center">
-Desafio do Stage 03 (Avançando no HTML e CSS) do curso Explorer da Rocketseat. Consiste em criar um blog trabalhando conceitos visto durante o módulo, entre eles: responsividade, flex box e animações em CSS.
+Desafio do Stage 03 (Avançando no HTML e CSS) do curso Explorer da Rocketseat.<br>
+Consiste em criar um blog trabalhando conceitos visto durante o módulo, entre eles: responsividade, flex box e animações em CSS.
 </p>
 
 <br>
