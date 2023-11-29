@@ -1,7 +1,7 @@
-<h1 align="center"> Portfolio Rocketseat </h1>
+<h1 align="center"> Corrigindo Bugs </h1>
 
 <p align="center">
-Portfolio proposto em forma de desafio pela Rocketseat. Meu objetivo foi treinar as aplicações do FlexBox e CSS Grid.
+Desafio do Stage 02 (Introdução ao HTML e CSS) do curso Explorer da Rocketseat. Consiste em receber um código embaralhado e organizar os elementos para que o desafio seja realizado. 
 </p>
 
 <br>
@@ -15,7 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-![Portfolio-Screenshot](https://github.com/murilloressineti/desafios-rocketseat/assets/125047522/130b0f4a-0ce8-484b-a17f-f611008288af)
+![Móveis customizados-Screenshot](https://github.com/murilloressineti/explorer-rocketseat/assets/125047522/4b3d5d3f-83ec-404a-9f81-7a9b1d01f622)
 
 
 ## 📝 Licença
