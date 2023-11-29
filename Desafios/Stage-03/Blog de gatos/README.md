@@ -2,7 +2,7 @@
 
 <p align="center">
 Desafio do Stage 03 (Avançando no HTML e CSS) do curso Explorer da Rocketseat.<br>
-Consiste em criar um blog trabalhando conceitos visto durante o módulo, entre eles: responsividade, flex box e animações em CSS.
+Conforme layout feito no Figma, consiste em recriar um blog, trabalhando conceitos visto durante o módulo, entre eles: responsividade, flex box e animações em css.
 </p>
 
 <br>
