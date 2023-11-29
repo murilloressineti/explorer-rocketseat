@@ -1,7 +1,7 @@
-<h1 align="center"> Portfolio Rocketseat </h1>
+<h1 align="center"> Blog de Gatos </h1>
 
 <p align="center">
-Portfolio proposto em forma de desafio pela Rocketseat. Meu objetivo foi treinar as aplicações do FlexBox e CSS Grid.
+Desafio do Stage 03 (Avançando no HTML e CSS) do curso Explorer da Rocketseat. Consiste em criar um blog trabalhando conceitos visto durante o módulo, entre eles: responsividade, flex box e animações em CSS.
 </p>
 
 <br>
@@ -15,7 +15,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-![Portfolio-Screenshot](https://github.com/murilloressineti/desafios-rocketseat/assets/125047522/130b0f4a-0ce8-484b-a17f-f611008288af)
+![Blog-de-gatos-Screenshot](https://github.com/murilloressineti/explorer-rocketseat/assets/125047522/bf29e59a-44ed-4b99-921e-4dc4cef9aeb3)
+
 
 
 ## 📝 Licença
