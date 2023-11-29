@@ -12,6 +12,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 
+
 ## 💻 Projeto
 
 ![Portfolio-Screenshot](https://github.com/murilloressineti/desafios-rocketseat/assets/125047522/130b0f4a-0ce8-484b-a17f-f611008288af)
