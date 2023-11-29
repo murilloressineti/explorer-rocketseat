@@ -1,4 +1,4 @@
-<h1 align="center"> Recriando Layout </h1>
+<h1 align="center"> Semântica e Acessibilidade </h1>
 
 <p align="center">
 Desafio do Stage 02 (Introdução ao HTML e CSS) do curso Explorer da Rocketseat. Reutilização do mesmo layout do desafio "Corrigindo Bugs-02", dessa vez, recebi o HTML sem nenhuma tag semântica e adicionei semântica e acessibilidade para o código. 
