@@ -1,0 +1,43 @@
+@media (min-width: 1120px) {
+    #app {
+        background-color: #F4FCFF;
+        min-width: 100vw;
+    }
+
+    #app header {
+        padding: 0 10rem 0 10rem;
+    }
+
+    main {
+        padding-top: 4rem;
+        max-width: 80rem;
+    }
+
+    main .container {
+        padding: 0 10rem 0 10rem;
+
+        display: grid;
+        grid-template-columns: 80rem 38.5rem;
+        
+        gap: 3.4rem;
+    }
+
+    .cat {
+        background-image: url(../assets/imagem-gato-grande.jpg);
+    }
+
+    .cat img#phone {
+        display: none;
+    }
+
+    .cat img#desktop {
+        display: block;
+    }
+
+    .tittle {
+        display: flex;
+        flex-direction: row;
+
+        gap: 3rem;
+    }
+}
