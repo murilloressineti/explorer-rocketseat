@@ -1,7 +1,8 @@
 <h1 align="center"> Recriando Layout </h1>
 
 <p align="center">
-Desafio do Stage 02 (Introdução ao HTML e CSS) do curso Explorer da Rocketseat. Consiste em analisar o design feito previamente no Figma e recriá-lo utilizando as tecnologias web.
+Desafio do Stage 02 (Introdução ao HTML e CSS) do curso Explorer da Rocketseat.<br>
+Analisei o design feito previamente no Figma e recriei utilizando as tecnologias web.
 </p>
 
 <br>
