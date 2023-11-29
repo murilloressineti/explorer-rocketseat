@@ -1,7 +1,8 @@
 <h1 align="center"> Corrigindo Bugs Extra </h1>
 
 <p align="center">
-Desafio do Stage 02 (Introdução ao HTML e CSS) do curso Explorer da Rocketseat. Consiste em receber um código embaralhado e organizar os elementos para que o desafio seja realizado. 
+Desafio do Stage 02 (Introdução ao HTML e CSS) do curso Explorer da Rocketseat.<br>
+Recebi um código embaralhado e organizei os elementos para que o desafio fosse realizado. 
 </p>
 
 <br>
