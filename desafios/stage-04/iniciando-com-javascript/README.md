@@ -12,7 +12,6 @@ Realizei dez exercícios que consistem em utilizar os conceitos aprendidos no St
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
-- Figma
 
 ## 💻 Projeto
 
