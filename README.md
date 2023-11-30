@@ -37,7 +37,7 @@ Consiste em diversos projetos ao longo do curso que estão localizados na pasta 
 - [Desafios](https://github.com/murilloressineti/explorer-rocketseat/tree/main/Desafios)
 
 
-## :memo: Licença
+## 📝 Licença
 
 Esse projeto está sob a licença MIT.
 
