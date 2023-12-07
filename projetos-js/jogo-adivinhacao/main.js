@@ -1,19 +1,42 @@
-const randomNumber = Math.round(Math.random() * 10)
+// Variáveis
+const screen1 = document.querySelector(".screen1")
+const screen2 = document.querySelector(".screen2")
+const btnTry = document.querySelector("#btnTry")
+const btnReset = document.querySelector("#btnReset")
+let randomNumber = Math.round(Math.random() * 10)
 let xAttempts = 1
 
-function handleClick(event) {
-    event.preventDefault()
+// Eventos
+btnTry.addEventListener('click', handleTryClick)
+btnReset.addEventListener('click', handleResetClick)
+document.addEventListener('keydown', function(e) {
+    if(e.key == 'Enter' && screen1.classList.contains('hide')) {
+        handleResetClick()
+    }
+})
+
+// Funções
+function handleTryClick(event) {
+    event.preventDefault() // Não faça o padrão. Explicando: o botão está dentro de um formulário, o padrão seria enviar o formulário (submit).
 
     const inputNumber = document.querySelector("#inputNumber")
 
     if(Number(inputNumber.value) == randomNumber) {
-        document.querySelector(".screen-1").classList.add("hide")
-        document.querySelector(".screen-2").classList.remove("hide")
-
-        document
-        .querySelector(".screen-2 h2")
-        .innerText = `acertou em ${xAttempts} tentativas!`
+        toggleScreen()
+        screen2.querySelector("h2").innerText = `acertou em ${xAttempts} tentativas!`
     }
 
+    inputNumber.value = ""
     xAttempts++
+}
+
+function handleResetClick() {
+    toggleScreen()
+    xAttempts = 1
+    randomNumber = Math.round(Math.random() * 10)
+}
+
+function toggleScreen() {
+    screen1.classList.toggle("hide")
+    screen2.classList.toggle("hide")
 }
