@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*font-family: 'Dancing Script', cursive;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+:root {
+    font-size: 62.5%;
+
+    --color-base-black: black;
+    --color-base-white: white;
+    --color-bg: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+
+    --color-01: #34355B;
+    --color-02: #E4EDF1;
+    --color-03: #FF9500;
+}
+
+body {
+    background: var(--color-bg);
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+body, button, input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    background: var(--color-base-white);
+    border-radius: .5rem;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+
+    width: min(42.8rem, 90%);
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    margin-top: -5rem;
+
+    text-align: center;
+}
+
+/* screen-1 */
