@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Consiste em diversos projetos ao longo do curso que estão localizados na pasta 'Desafios'.
 
-- [Desafios](https://github.com/murilloressineti/explorer-rocketseat/tree/main/Desafios)
+- [Desafios](https://github.com/murilloressineti/explorer-rocketseat/tree/main/desafios)
 
 
 ## 📝 Licença
