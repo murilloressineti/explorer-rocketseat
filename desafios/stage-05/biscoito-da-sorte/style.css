@@ -21,6 +21,7 @@ font-family: 'Montserrat', sans-serif;
     --color-01: #34355B;
     --color-02: #E4EDF1;
     --color-03: #FF9500;
+    --color-04: #e08403;
 }
 
 body {
@@ -46,10 +47,63 @@ main {
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
 
     width: min(42.8rem, 90%);
-    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    padding: 4.8rem 6.4rem 6.4rem 4.8rem;
     margin-top: -5rem;
 
     text-align: center;
 }
 
 /* screen-1 */
+
+h1 {
+    color: var(--color-01);
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    margin-bottom: 1.4rem;
+}
+
+p {
+    color: var(--color-01);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    margin-bottom: 2.6rem;
+    }
+
+/* screen-2 */
+
+section {
+    background-color: var(--color-02);
+    padding: 1rem;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+    margin-bottom: 6rem;
+}
+
+section p {
+    color: var(--color-base-black);
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: auto;
+}
+
+button {
+    color: var(--color-base-white);
+    background-color: var(--color-03);
+
+    border: none;
+    border-radius: .4rem;
+    padding: 1.6rem;
+    margin-top: 6rem;
+
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover {
+    background-color: var(--color-04);
+}
