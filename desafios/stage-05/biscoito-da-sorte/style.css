@@ -53,6 +53,10 @@ main {
     text-align: center;
 }
 
+.screen1 img {
+    cursor: pointer;
+}
+
 /* screen-1 */
 
 h1 {
