@@ -2,7 +2,7 @@
 
 <p align="center">
 Projeto feito durante o Stage 05 (Avançando no JavaScript) da Rocketseat.<br/>
-Nesse projeto, foquei na aplicação do JavaScript, assim como a aplicação dos modais.
+Neste projeto, foquei na aplicação do JavaScript, assim como a aplicação dos modais.
 </p>
 
 <br>
