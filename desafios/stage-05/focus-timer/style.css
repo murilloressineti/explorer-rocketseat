@@ -110,7 +110,6 @@ html:not(.running) .ph-pause-circle{
     justify-content: center;
     grid-template-columns: repeat(2, 12rem);
     gap: 3.2rem;
-    
 }
 
 #sounds button {
