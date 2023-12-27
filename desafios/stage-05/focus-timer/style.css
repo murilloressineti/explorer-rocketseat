@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgb(50, 50, 56);
+    --controls-color: rgb(50, 50, 56);
+
+    --sounds-bg-color: rgb(225, 225, 230);
+    --icons-color: rgb(50, 50, 56);
+    --icons-select: rgb(255, 255, 255);
+
+    --sounds-forest-color:rgb(2, 156, 10);
+    --sounds-rain-color:rgba(2, 120, 156);
+    --sounds-restaurant-color:rgba(245, 228, 0);
+    --sounds-fireplace-color:rgba(209, 66, 0);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+html.dark {
+    --bg-color: rgb(17, 18, 19);
+    --text-color: rgb(255, 255, 255);
+}
+
+html.dark .ph-moon,
+html:not(.dark) .ph-sun {
+    display: none;
+}
+
+#toggle-mode {
+    color: var(--icons-color);
+
+    font-size: 3rem;
+    line-height: 0;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+#app {
+    display: grid;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+#timer {
+    font-size: 12rem;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: auto
+}
+
+#controls {
+    margin-top: 1.7rem;
+    gap: 4rem;
+}
+
+#controls button {
+    color: var(--icons-color);
+    font-size: 5rem;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle{
+    display: none;
+}
+
+#sounds {
+    margin-top: 4rem;
+    
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 12rem);
+    gap: 3.2rem;
+    
+}
+
+#sounds button {
+    color: var(--icons-color);
+    font-size: 4rem;
+
+    padding: 3rem 1rem 3rem 1rem;
+    
+    background-color: var(--sounds-bg-color);
+    border: 0;
+    border-radius: 2.4rem;
+    cursor: pointer;
+}

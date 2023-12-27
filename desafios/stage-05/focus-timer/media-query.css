@@ -1,0 +1,15 @@
+@media (min-width: 1200px) {
+    #toggle-mode {
+        position: absolute;
+        right: 3.2rem;
+        top: 3.2rem;
+    }
+
+    #controls button {
+        font-size: 6rem;
+    }
+
+    #sounds button {
+        padding: 4rem 2rem 4rem 2rem;
+    }
+}

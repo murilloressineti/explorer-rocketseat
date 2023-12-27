@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <!--<link rel="shortcut icon" href="assets/favicon.svg" type="image/x-svg">-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="app">
+        <button id="toggle-mode">
+            <span class="sr-only">Ativar Light Mode</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
+
+        <section id="timer" class="flex">
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </section>
+
+        <section id="controls" class="flex">
+            <button
+                data-action="toggleRunning"
+                class="ph ph-play-circle">
+                <span class="sr-only">play</span>
+            </button>
+
+            <button
+                data-action="toggleRunning"
+                class="ph ph-pause-circle">
+                <span class="sr-only">pause</span>
+            </button>
+
+            <button
+                data-action="reset"
+                class="ph ph-stop-circle">
+                <span class="sr-only">stop</span>
+            </button>
+
+            <button
+                data-action="moreTime"
+                class="ph ph-plus-circle">
+                <span class="sr-only">more time</span>
+            </button>
+
+            <button
+                data-action="lessTime"
+                class="ph ph-minus-circle">
+                <span class="sr-only">less time</span>
+            </button>
+
+        </section>
+
+        <section id="sounds">
+            <button
+                class="ph ph-tree">
+                <span class="sr-only">forest</span>
+            </button>
+
+            <button
+                class="ph ph-cloud-rain">
+                <span class="sr-only">rain</span>
+            </button>
+
+            <button
+                class="ph ph-storefront">
+                <span class="sr-only">restaurant</span>
+            </button>
+
+            <button
+                class="ph ph-fire">
+                <span class="sr-only">fireplace</span>
+            </button>
+        </section>
+    </div>
+</body>
+</html>
