@@ -17,6 +17,8 @@
     --icons-color: rgb(50, 50, 56);
     --icons-select: rgb(255, 255, 255);
 
+    --toggle-color: rgb(50, 50, 56);
+
     --sounds-forest-color:rgb(2, 156, 10);
     --sounds-rain-color:rgba(2, 120, 156);
     --sounds-restaurant-color:rgba(245, 228, 0);
@@ -38,6 +40,9 @@
 html.dark {
     --bg-color: rgb(17, 18, 19);
     --text-color: rgb(255, 255, 255);
+    --controls-color: rgb(255, 255, 255);
+
+    --toggle-color: rgb(255, 255, 255);
 }
 
 html.dark .ph-moon,
@@ -46,7 +51,7 @@ html:not(.dark) .ph-sun {
 }
 
 #toggle-mode {
-    color: var(--icons-color);
+    color: var(--toggle-color);
 
     font-size: 3rem;
     line-height: 0;
@@ -91,7 +96,7 @@ body {
 }
 
 #controls button {
-    color: var(--icons-color);
+    color: var(--controls-color);
     font-size: 6rem;
 
     background-color: transparent;
@@ -125,4 +130,8 @@ html:not(.running) .ph-pause-circle{
     border: 0;
     border-radius: 2.4rem;
     cursor: pointer;
+}
+
+.forest {
+    background-color: var(--sounds-forest-color);
 }

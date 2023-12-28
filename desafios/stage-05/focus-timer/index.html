@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="media-query.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="src/main.js" defer></script>
 </head>
 <body>
     <div id="app">
         <button id="toggle-mode">
-            <span class="sr-only">Ativar Light Mode</span>
+            <span class="sr-only">light mode on</span>
             <i class="ph-bold ph-sun"></i>
             <i class="ph-bold ph-moon"></i>
         </button>
@@ -66,21 +68,25 @@
 
             <section id="sounds">
                 <button
-                    class="ph ph-tree">
+                    data-action="forest"
+                    class="ph ph-tree forest">
                     <span class="sr-only">forest</span>
                 </button>
 
                 <button
+                    data-action="rain"
                     class="ph ph-cloud-rain">
                     <span class="sr-only">rain</span>
                 </button>
 
                 <button
+                    data-action="restaurant"
                     class="ph ph-storefront">
                     <span class="sr-only">restaurant</span>
                 </button>
 
                 <button
+                    data-action="fireplace"
                     class="ph ph-fire">
                     <span class="sr-only">fireplace</span>
                 </button>
