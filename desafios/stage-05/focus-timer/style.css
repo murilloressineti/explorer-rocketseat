@@ -19,10 +19,10 @@
 
     --toggle-color: rgb(50, 50, 56);
 
-    --sounds-forest-color:rgb(2, 156, 10);
-    --sounds-rain-color:rgba(2, 120, 156);
-    --sounds-restaurant-color:rgba(245, 228, 0);
-    --sounds-fireplace-color:rgba(209, 66, 0);
+    --sounds-forest-color:rgb(114, 166, 3);
+    --sounds-rain-color:rgb(4, 119, 191);
+    --sounds-restaurant-color:rgb(5, 199, 242);
+    --sounds-fireplace-color:rgb(242, 151, 39);
 }
 
 .sr-only {
@@ -105,11 +105,6 @@ body {
     cursor: pointer;
 }
 
-.running .ph-play-circle,
-html:not(.running) .ph-pause-circle{
-    display: none;
-}
-
 #sounds {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -132,6 +127,40 @@ html:not(.running) .ph-pause-circle{
     cursor: pointer;
 }
 
-.forest {
+#sounds button.ph-tree:hover,
+#sounds button.ph-tree:focus {
+    color: var(--icons-select);
     background-color: var(--sounds-forest-color);
+    transition-duration: 700ms;
+    transform: scale(1.1);
+}
+
+#sounds button.ph-cloud-rain:hover,
+#sounds button.ph-cloud-rain:focus {
+    color: var(--icons-select);
+    background-color: var(--sounds-rain-color);
+    transition-duration: 700ms;
+    transform: scale(1.1);
+}
+
+#sounds button.ph-storefront:hover,
+#sounds button.ph-storefront:focus {
+    color: var(--icons-select);
+    background-color: var(--sounds-restaurant-color);
+    transition-duration: 700ms;
+    transform: scale(1.1);
+}
+
+#sounds button.ph-fire:hover,
+#sounds button.ph-fire:focus {
+    color: var(--icons-select);
+    background-color: var(--sounds-fireplace-color);
+    transition-duration: 700ms;
+    transform: scale(1.1);
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle
+{
+    display: none;
 }
