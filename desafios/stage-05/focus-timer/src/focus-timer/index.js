@@ -10,5 +10,6 @@ export function start(minutes, seconds) {
 
     events.registerControls()
     events.registerSounds()
-    events.setMinutes()
+    events.moreTime()
+    events.lessTime()
 }

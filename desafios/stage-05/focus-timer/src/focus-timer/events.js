@@ -25,14 +25,13 @@ export function registerSounds() {
     })
 }
 
-export function setMinutes() {
-    el.minutes.addEventListener('focus', () => {
-        el.minutes.textContent = ''
+export function moreTime() {
+    el.minutes.addEventListener('click', () => {
+        el.minutes.textContent = Number(el.minutes.textContent) + 5;
+        
     })
 
-    el.minutes.onkeypress = (event) => /\d/.test(event.key)
-
-    el.minutes.addEventListener('blur', (event) => {
+    el.minutes.addEventListener('click', (event) => {
         let time = event.currentTarget.textContent
         time = time > 60 ? 60 : time
 
@@ -40,6 +39,22 @@ export function setMinutes() {
         state.seconds = 0
 
         updateDisplay()
-        el.minutes.removeAttribute('contenteditable')
+    })
+}
+
+export function lessTime() {
+    /*el.minutes.addEventListener('click', () => {
+        el.minutes.textContent = Number(el.minutes.textContent) - 5;
+        
+    })
+    */
+    el.minutes.addEventListener('click', (event) => {
+        let time = event.currentTarget.textContent
+        time = time < 0 ? 0 : time
+
+        state.minutes = time
+        state.seconds = 0
+
+        updateDisplay()
     })
 }

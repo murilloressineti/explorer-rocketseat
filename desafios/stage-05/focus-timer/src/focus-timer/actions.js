@@ -19,13 +19,15 @@ export function reset() {
 }
 
 export function moreTime() {
-    el.minutes.setAttribute('contenteditable', true) /*adicionar tempo de 5 em 5 */
-    el.minutes.focus()
+    el.minutes.click()
+
+    sounds.buttonPressAudio.play()
 }
 
 export function lessTime() {
-    el.minutes.setAttribute('contenteditable', true) /*diminuir tempo de 5 em 5 */
-    el.minutes.focus()
+    el.minutes.click()
+
+    sounds.buttonPressAudio.play()
 }
 
 export function toggleMusicForest() {
