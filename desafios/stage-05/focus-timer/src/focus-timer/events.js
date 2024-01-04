@@ -26,12 +26,11 @@ export function registerSounds() {
 }
 
 export function moreTime() {
-    el.minutes.addEventListener('click', () => {
-        el.minutes.textContent = Number(el.minutes.textContent) + 5;
-        
+    minutes.addEventListener('click', () => {
+        minutes.textContent = Number(minutes.textContent) + 5;
     })
 
-    el.minutes.addEventListener('click', (event) => {
+    minutes.addEventListener('click', (event) => {
         let time = event.currentTarget.textContent
         time = time > 60 ? 60 : time
 
@@ -40,15 +39,19 @@ export function moreTime() {
 
         updateDisplay()
     })
+
+    minutes.addEventListener('click', (event) => {
+        console.log(event.target)
+    })
+
 }
 
 export function lessTime() {
-    /*el.minutes.addEventListener('click', () => {
-        el.minutes.textContent = Number(el.minutes.textContent) - 5;
-        
+    minutes.addEventListener('click', () => {
+        minutes.textContent = Number(minutes.textContent) - 5;
     })
-    */
-    el.minutes.addEventListener('click', (event) => {
+
+    minutes.addEventListener('click', (event) => {
         let time = event.currentTarget.textContent
         time = time < 0 ? 0 : time
 
@@ -57,4 +60,21 @@ export function lessTime() {
 
         updateDisplay()
     })
+
+    minutes.addEventListener('click', (event) => {
+        console.log(event.target)
+    })
+    
 }
+
+
+/*minutes.addEventListener('click', () => { 
+    if(Number(minutes.textContent) >= 5) {
+    minutes.textContent = Number(minutes.textContent) - 2;
+} else {
+    minutes.textContent = '00';
+    seconds.textContent = '00';
+}
+}) 
+
+*/
