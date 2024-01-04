@@ -17,7 +17,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-<img src="assets/screenshot.png.png"/>
+<img src="assets/screenshot.png"/>
 
 ## 📝 Licença
 
