@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+    --color-base-black: black;
+    --color-base-white: white;
+
+    --text-color: #E1E1E6;
+    --text-button: #02799D;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
