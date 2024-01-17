@@ -1,7 +1,7 @@
 <h1 align="center">SPA Universe</h1>
 
 <p align="center">
-Desafio do Stage 06 - JavaScript antes do Framework.<br/>
+Projeto feito durante o Stage 06 - JavaScript antes do Framework. da Rocketseat.<br/>
 Este projeto consiste em uma página institucional desenvolvida com base nos princípios de SPA (Single Page Application), utilizando mapeamento de rotas, assincronicidade e promises. A implementação segue uma abordagem orientada a objetos, fazendo uso de classes para estruturar e organizar o código de maneira eficiente
 </p>
 
