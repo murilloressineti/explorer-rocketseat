@@ -19,13 +19,25 @@ export function reset() {
 }
 
 export function moreTime() {
-    el.minutes.click()
+    let time = Number(el.minutes.textContent) + 5
+    time = time > 60 ? 60 : time
+
+    state.minutes = time
+    state.seconds = 0
+
+    timer.updateDisplay()
 
     sounds.buttonPressAudio.play()
 }
 
 export function lessTime() {
-    el.minutes.click()
+    let time = Number(el.minutes.textContent) - 5
+    time = time < 0 ? 0 : time
+
+    state.minutes = time
+    state.seconds = 0
+
+    timer.updateDisplay()
 
     sounds.buttonPressAudio.play()
 }
