@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+
+    --color-base-black: black;
+    --color-base-white: white;
+
+    --text-color: #E1E1E6;
+    --input-color: #06181C;
+    --button-color: #065E7C;
+
+    --head-list-color: #043444;
+
+    --row-list-color-01: rgb(6, 24, 28);
+    --row-list-color-02: rgba(6, 24, 28, 0.5);
+
+    --border-list: #4A808C;
+    --scroll-color: #4A808C;
+    --remove-color: #F75A68;
+}
