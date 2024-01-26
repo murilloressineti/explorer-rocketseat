@@ -14,11 +14,13 @@
     --color-base-white: white;
 
     --text-color: #E1E1E6;
+    --text-color-alternative: #4E5455;
     --input-color: #06181C;
     --button-color: #065E7C;
 
     --head-list-color: #043444;
 
+    --list-color: rgb(3, 11, 13);
     --row-list-color-01: rgb(6, 24, 28);
     --row-list-color-02: rgba(6, 24, 28, 0.5);
 
@@ -57,7 +59,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    margin-bottom: 8.5rem;
+    margin-bottom: 6rem;
 }
 
 .search {
@@ -97,9 +99,74 @@ header {
     gap: .8rem;
 
     text-transform: uppercase;
+    transition: all .1s;
+}
+
+.search button:hover {
+    background-color: var(--color-base-white);
+    color: var(--button-color);
+    background-image: url(assets/star-blue.svg) no-repeat left;
 }
 
 .search button.white {
     background-color: var(--color-base-white);
     color: var(--button-color);
+}
+
+html:not(.normal) .search button.white {
+    display: none;
+}
+
+.thead {
+    background-color: var(--head-list-color);
+
+    border: 0.1rem solid var(--border-list);
+    border-bottom: 0;
+    border-radius: 1.2rem 1.2rem 0 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thead div {
+    font-size: 1.8rem;
+
+    text-align: left;
+    font-weight: normal;
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+.thead div:nth-child(1) {
+    width: 50rem;
+}
+
+.thead div:nth-child(4) {
+    padding-right: 5rem;
+}
+
+table {
+    background-color: var(--list-color);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.noFav {
+    color: var(--text-color-alternative);
+    background-color: var(--list-color);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+
+    height: 50rem;
+    border: 0.1rem solid var(--border-list);
+    border-top: 0;
+    border-radius: 0 0 1.2rem 1.2rem;
 }
