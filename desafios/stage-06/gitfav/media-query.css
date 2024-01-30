@@ -1,0 +1,32 @@
+@media (min-width:720px) and (max-width:1080px) {
+    header {
+        flex-direction: column;
+    }
+    
+    .search {
+        margin-top: 5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width:720px) {
+    header {
+        flex-direction: column;
+    }
+
+    .search{
+        margin-top: 5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .search > button {
+        width: 100%;
+        justify-content: center
+    }
+
+    .thead div {
+        padding: 1.6rem 0.4rem 1.6rem 2rem;
+    }
+}
