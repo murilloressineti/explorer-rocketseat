@@ -1,3 +1,17 @@
+export class GithubUser {
+    static search(username) {
+        const endpoint = `https://api.github.com/users/${username}`
+
+        return fetch(endpoint).then(data => data.json())
+        .then(({login, name, public_repos, followers}) => ({
+            login,
+            name,
+            public_repos,
+            followers,
+        }))
+    }
+}
+
 export class Favorites {
     constructor(root) {
         this.root = document.querySelector(root)
@@ -5,21 +19,16 @@ export class Favorites {
     }
 
     load() {
-        this.entries = [
-            {
-                login: 'murilloressineti',
-                name: 'Murillo Ressineti',
-                public_repos: '10',
-                followers: '10'
-            },
-            
-            {
-                login: 'murilloressineti',
-                name: 'Murillo Ressineti',
-                public_repos: '10',
-                followers: '10'
-            },
-        ]
+        this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
+
+        console.log(this.entries)
+    }
+
+    delete(user) {
+        const filteredEntries = this.entries.filter(entry => entry.login !== user.login)
+
+        this.entries = filteredEntries
+        this.update()
     }
 }
 
@@ -45,6 +54,13 @@ export class FavoritesView extends Favorites {
             row.querySelector('.repositories').textContent = user.public_repos
             row.querySelector('.followers').textContent = user.followers
 
+            row.querySelector('.remove').onclick = () => {
+                const isOk = confirm('Tem certeza que deseja deletar essa linha?')
+                if(isOk) {
+                    this.delete(user)
+                }
+            }
+
             this.tbody.append(row)
         })
     }
@@ -54,7 +70,7 @@ export class FavoritesView extends Favorites {
 
         tr.innerHTML = `
             <td class="user">
-                <img src="https://github.com/murilloressineti.png" alt="Imagem de maykbrito">
+                <img src="https://github.com/murilloressineti.png" alt="Imagem de murilloressineti">
                 <a href="https://github.com/murilloressineti/" target="_blank">
                 <p>Murillo Ressineti</p>
                 <span>/murilloressineti</span>
