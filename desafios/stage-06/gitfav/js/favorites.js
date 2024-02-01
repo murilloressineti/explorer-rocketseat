@@ -4,7 +4,6 @@ export class Favorites {
     constructor(root) {
         this.root = document.querySelector(root)
         this.load()
-        GithubUser.search('murilloressineti').then(user => console.log(user))
     }
 
     load() {
@@ -34,7 +33,7 @@ export class Favorites {
             this.save()
 
         } catch(error) {
-            alert(error.mesage)
+            alert(error.message)
         }
     }
 
@@ -60,7 +59,7 @@ export class FavoritesView extends Favorites {
     onadd() {
         const addButton = this.root.querySelector('.search button')
         addButton.onclick = () => {
-            const {value} = this.root.querySelector('.search button')
+            const {value} = this.root.querySelector('.search input')
 
             this.add(value)
         }
