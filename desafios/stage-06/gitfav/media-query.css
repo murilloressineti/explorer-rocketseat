@@ -24,6 +24,10 @@
         font-size: 1.6rem;
     }
 
+    .table-wrapper {
+        margin-bottom: 10rem;
+    }
+
     .noFav {
         padding: 5rem;
     }
@@ -58,6 +62,10 @@
     .thead div {
         font-size: 1.6rem;
         padding: 1rem;
+    }
+
+    .table-wrapper {
+        margin-bottom: 10rem;
     }
 
     .noFav {
