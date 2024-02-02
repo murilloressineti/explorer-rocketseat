@@ -23,6 +23,14 @@
     .thead div {
         font-size: 1.6rem;
     }
+
+    .noFav {
+        padding: 5rem;
+    }
+
+    .noFav P {
+        line-height: 4rem;
+    }
 }
 
 @media (max-width:768px) {
@@ -50,5 +58,15 @@
     .thead div {
         font-size: 1.6rem;
         padding: 1rem;
+    }
+
+    .noFav {
+        padding: 5rem;
+        gap: 3rem;
+    }
+
+    .noFav P {
+        font-size: 3rem;
+        line-height: 4rem;
     }
 }
