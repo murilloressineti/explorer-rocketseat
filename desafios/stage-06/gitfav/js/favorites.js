@@ -4,6 +4,16 @@ export class Favorites {
     constructor(root) {
         this.root = document.querySelector(root)
         this.load()
+        this.noFav()
+    }
+
+    noFav() {
+        if(localStorage.getItem("@github-favorites:") != "[]") {
+            this.root.querySelector(".noFav").classList.add("hide")
+
+        } else {
+            this.root.querySelector(".noFav").classList.remove("hide")
+        }
     }
 
     load() {
@@ -12,6 +22,8 @@ export class Favorites {
 
     save() {
         localStorage.setItem('@github-favorites:', JSON.stringify(this.entries))
+
+        this.noFav()
     }
 
     async add(username) {
@@ -43,6 +55,7 @@ export class Favorites {
         this.entries = filteredEntries
         this.update()
         this.save()
+        this.noFav()
     }
 }
 
