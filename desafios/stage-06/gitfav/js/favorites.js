@@ -58,11 +58,12 @@ export class FavoritesView extends Favorites {
 
     onadd() {
         const addButton = this.root.querySelector('.search button')
-        addButton.onclick = () => {
+        
+        addButton.addEventListener('click', (event) => {
             const {value} = this.root.querySelector('.search input')
 
             this.add(value)
-        }
+        })
     }
 
     update() {

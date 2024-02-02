@@ -176,10 +176,14 @@ table {
     justify-content: center;
     gap: 6rem;
 
-    height: 50rem;
+    height: 40rem;
     border: 0.1rem solid var(--border-list);
     border-top: 0;
     border-radius: 0 0 1.2rem 1.2rem;
+}
+
+.hide {
+    display: none;
 }
 
 tbody tr:nth-child(even) {
