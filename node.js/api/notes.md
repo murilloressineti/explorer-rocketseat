@@ -20,3 +20,10 @@ Para o método post:
 1- Falar para a aplicação que vamos utilizar o json para receber os dados, para isso: app.use(express.json())
 2- Passar recuperar os dados que foram enviados no corpo da requisição: const {name, email, password} = request.body
 3- Para responder também conseguimos responder utilizando o json (é o padrão mais utilizado)
+
+Para erros:
+1- Adicionar a biblioteca: npm install express-async-errors --save
+
+Para Banco de dados:
+
+1- npm install sqlite3 sqlite --save

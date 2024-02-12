@@ -1,8 +1,19 @@
+const AppError = require('../utils/AppError.js')
+
+const sqliteConnection = require('../database/sqlite')
+
 class UsersControllers {
-    create(request, response) {
+    async create(request, response) {
         const {name, email, password} = request.body
 
-        response.status(201).json({name, email, password})
+        const database = await sqliteConnection()
+        const checkUserExists = await database.get("SELECT * FROM users WHERE email = (?)", [email])
+
+        if (checkUserExists){
+        throw new AppError("Este e-mail já está em uso.")
+        }
+
+        return response.status(201).json()
     }
 
 /**
@@ -15,4 +26,3 @@ class UsersControllers {
 }
 
 module.exports = UsersControllers
-
