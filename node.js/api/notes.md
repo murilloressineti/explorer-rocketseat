@@ -25,5 +25,7 @@ Para erros:
 1- Adicionar a biblioteca: npm install express-async-errors --save
 
 Para Banco de dados:
-
 1- npm install sqlite3 sqlite --save
+
+Para criptografia das senhas:
+1- npm install bcryptjs --save
