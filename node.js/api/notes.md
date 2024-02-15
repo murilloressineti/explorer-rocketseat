@@ -29,3 +29,8 @@ Para Banco de dados:
 
 Para criptografia das senhas:
 1- npm install bcryptjs --save
+
+Para Query Builder:
+1- npm install knex --save
+2- npx knex init
+3- npx knex migrate:make createNotes
