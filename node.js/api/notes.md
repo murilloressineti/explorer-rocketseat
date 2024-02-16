@@ -8,7 +8,7 @@ Para Iniciar o servidor:
 6 - No terminal inicar digitando npm start, para interromper ctrl + c
 7 - npm install nodemon --save-dev para não ficar tendo que interremper e inicar o servidor toda hora
 8 - Após adicionar o nodemon na package.json: "scripts": "dev": "nodemon ./src/server.js"
-9 - Para iniciar no terminar agora é: 'npm run dev' ao invés de 'npm start'
+9 - Para iniciar no terminal agora é: 'npm run dev' ao invés de 'npm start'
 
 Para o método get:
 1- app.get('/users', (request, response) => {})
