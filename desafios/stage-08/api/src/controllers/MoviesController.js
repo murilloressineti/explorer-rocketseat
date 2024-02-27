@@ -17,15 +17,15 @@ class MoviesController {
       user_id
     })
 
-    /*const tagsInsert = tags.map(name => {
+    const tagsInsert = tags.map(name => {
       return {
-        MovieNotes_id,
+        MovieNote_id,
         name,
         user_id
       }
     })
 
-    await knex("MovieTags").insert(tagsInsert)*/
+    await knex("MovieTags").insert(tagsInsert)
 
     response.json()
   }
