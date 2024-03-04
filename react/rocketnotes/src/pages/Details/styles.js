@@ -1,8 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-
-    background-color: rgb(255, 191, 191);
-    color: blue;
-
+    width: 100%;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-rows: 10.5rem auto;
+    grid-template-areas: 
+    "header"
+    "content";
 `
