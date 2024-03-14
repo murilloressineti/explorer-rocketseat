@@ -1,9 +1,9 @@
-import { Container, Logo, Search, Profile } from './styles'
+import { Container, Brand, Search, Profile } from './styles'
 
 export function Header(){
     return(
         <Container>
-            <Logo>RocketMovies</Logo>
+            <Brand>RocketMovies</Brand>
             <Search placeholder="Pesquisar pelo título">
             </Search>
 

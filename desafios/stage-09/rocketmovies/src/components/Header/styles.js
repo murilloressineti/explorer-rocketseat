@@ -17,7 +17,7 @@ export const Container = styled.header`
     padding: 0 8rem;
 `
 
-export const Logo = styled.h1`
+export const Brand = styled.h1`
     font-size: 2.4rem;
     color: ${({theme}) => theme.COLORS.PINK};
 `

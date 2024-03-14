@@ -49,7 +49,7 @@ export const Content = styled.div`
 
         color: ${({theme}) => theme.COLORS.GRAY_100};
         font-size: 3.6rem;
-        font-weight: medium;
+        font-weight: 500;
 
         > svg {
             margin-left: 1rem;
