@@ -46,7 +46,7 @@ export const Profile = styled.div`
 
     > img {
         width: 5.6rem;
-        height: 5.5rem;
+        height: 5.6rem;
         border-radius: 50%;
         border: .1rem solid ${({theme}) => theme.COLORS.GRAY_500};;
     }

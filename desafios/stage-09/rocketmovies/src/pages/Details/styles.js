@@ -14,6 +14,20 @@ export const Container = styled.div`
         grid-area: content;
         overflow-y: scroll;
         padding: 6.4rem 0;
+
+        overflow-y: auto;
+
+        margin: 0 auto;
+        padding-right: 1.6rem;
+    }
+
+    ::-webkit-scrollbar {
+    width: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: ${({theme}) => theme.COLORS.PINK};; 
+    border-radius: 1rem;
     }
 
 `
@@ -24,30 +38,62 @@ export const Content = styled.div`
 
     display: flex;
     flex-direction: column;
-
+    
     > button:first-child {
         align-self: start;
     }
 
     > h1 {
-        padding-bottom: 1.6rem;
-        margin-top: 2.8rem;
-        margin-bottom: 2.8rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
 
         color: ${({theme}) => theme.COLORS.GRAY_100};
         font-size: 3.6rem;
         font-weight: medium;
+
+        > svg {
+            margin-left: 1rem;
+            color: ${({theme}) => theme.COLORS.PINK};
+            font-size: 2rem;
+        }
+
+        > svg:first-child{
+            margin-left: 2rem;
+        }
+
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        > span {
+            font-family: "Roboto", sans-serif;
+        }
+
+        > img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: .1rem solid ${({theme}) => theme.COLORS.GRAY_500};;
+        margin-right: -1rem;
+        }
+
+        > svg {
+            margin-right: -1rem;
+            color: ${({theme}) => theme.COLORS.PINK};
+            font-size: 2rem;
+        }
+    }
+
+    > section {
+        margin: 4rem 0;
     }
 
     > p {
         font-size: 1.6rem;
-        margin-top: 1.6rem;
+        margin-bottom: 2rem;
         text-align: justify;
     }
-`
-
-export const Stars = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 `
