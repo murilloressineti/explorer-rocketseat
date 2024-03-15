@@ -1,11 +1,11 @@
 import { Container, Content } from "./styles.js"
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { IoStarSharp, IoStarOutline } from "react-icons/io5";
 import { LuClock3 } from "react-icons/lu";
 
 import { Header } from "../../components/Header"
 import { Tag } from "../../components/Tag"
 import { ButtonText } from "../../components/ButtonText"
+import { Stars } from "../../components/Stars"
 
 export function Details() {
   return (
@@ -16,8 +16,9 @@ export function Details() {
         <Content>
           <ButtonText title='Voltar' icon={FaArrowLeftLong} />
           
-          <h1>Interstellar 
-            <IoStarSharp /><IoStarSharp /><IoStarSharp /><IoStarSharp /><IoStarOutline />
+          <h1>
+            Interstellar 
+            <Stars></Stars>
           </h1>
 
           <div>

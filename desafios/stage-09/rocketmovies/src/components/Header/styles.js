@@ -14,11 +14,13 @@ export const Container = styled.header`
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 8rem;
+    padding: 0 12rem;
+
 `
 
 export const Brand = styled.h1`
     font-size: 2.4rem;
+    font-weight: 500;
     color: ${({theme}) => theme.COLORS.PINK};
 `
 

@@ -50,17 +50,8 @@ export const Content = styled.div`
         color: ${({theme}) => theme.COLORS.GRAY_100};
         font-size: 3.6rem;
         font-weight: 500;
-
-        > svg {
-            margin-left: 1rem;
-            color: ${({theme}) => theme.COLORS.PINK};
-            font-size: 2rem;
-        }
-
-        > svg:first-child{
-            margin-left: 2rem;
-        }
-
+        
+        display: flex;
     }
 
     > div {

@@ -9,11 +9,14 @@ export default {
       
       WHITE: "#FFFFFF",
       PINK: "#FF859B",
+      PINK_OPACITY: "#ff859b0d",
+
   
       GRAY_100: "#F4EDE8",
       GRAY_200: "#CAC4CF",
       GRAY_300: "#948F99",
       GRAY_400: "#999591",
       GRAY_500: "#3E3B47",
+      GRAY_600: "#312E38"
     }
   }

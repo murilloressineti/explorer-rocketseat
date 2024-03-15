@@ -24,6 +24,10 @@ export default createGlobalStyle`
         outline: none;
     }
 
+    h1 {
+        font-weight: 400;
+    }
+
     a {
         text-decoration: none;
     }
