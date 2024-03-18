@@ -1,5 +1,5 @@
 import { Container, Content } from "./styles.js"
-import { FaArrowLeftLong } from "react-icons/fa6";
+import { FiArrowLeft } from "react-icons/fi";
 import { LuClock3 } from "react-icons/lu";
 
 import { Header } from "../../components/Header"
@@ -14,7 +14,7 @@ export function Details() {
 
       <main>
         <Content>
-          <ButtonText title='Voltar' icon={FaArrowLeftLong} />
+          <ButtonText title='Voltar' icon={FiArrowLeft} />
           
           <h1>
             Interstellar 

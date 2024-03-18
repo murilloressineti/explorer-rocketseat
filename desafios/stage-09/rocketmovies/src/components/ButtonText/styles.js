@@ -11,6 +11,6 @@ export const Container = styled.button`
     align-items: center;
 
     > svg {
-    margin-right: .8rem;
+    margin-right: .5rem;
   }
 `
