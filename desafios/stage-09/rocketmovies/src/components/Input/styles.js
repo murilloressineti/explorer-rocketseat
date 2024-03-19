@@ -6,7 +6,6 @@ export const Container = styled.div`
   align-items: center;
 
   background-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
-  color: ${({theme}) => theme.COLORS.GRAY_300};
 
   margin-bottom: .8rem;
   border-radius: 1rem;
