@@ -5,7 +5,7 @@ import { ButtonText } from "../../components/ButtonText"
 import { Textarea } from "../../components/Textarea"
 import { Section } from "../../components/Section"
 import { MovieItem } from "../../components/MovieItem";
-
+import { Button } from "../../components/Button";
 
 import { Container, Form } from "./styles";
 
@@ -30,9 +30,15 @@ export function New(){
                     <Section title='Marcadores'>
                         <div className="tags">
                             <MovieItem value='React'/>
+                            <MovieItem value='JavaScript'/>
                             <MovieItem isNew placeholder='Novo Marcador'/>
                         </div>
                     </Section>
+
+                    <div className="buttons">
+                        <Button title='Excluir filme'></Button>
+                        <Button title='Salvar alterações'></Button>
+                    </div>
                 </Form>
             </main>
         </Container>

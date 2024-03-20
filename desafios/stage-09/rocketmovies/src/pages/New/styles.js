@@ -18,9 +18,28 @@ export const Container = styled.div`
     }
 
     .tags{
-        background-color: black;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
+        gap: 2.4rem;
+
+        background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+        border: none;
+        border-radius: .8rem;
+        padding: 1.6rem;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        margin-top: 4rem;
+
+        > button:nth-child(1) {
+            background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+            color: ${({theme}) => theme.COLORS.PINK};
+        }
     }
 `
 

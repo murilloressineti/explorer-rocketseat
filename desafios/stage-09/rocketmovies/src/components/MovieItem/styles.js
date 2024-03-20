@@ -9,7 +9,6 @@ export const Container = styled.div`
 
     border: ${({ theme, isNew }) => isNew ? `1px dashed ${theme.COLORS.GRAY_300}` : "none"};
 
-    margin-bottom: 8rem;
     border-radius: 1rem;
     padding-right: 1rem;
 
