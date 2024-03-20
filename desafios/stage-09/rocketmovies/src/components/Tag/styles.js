@@ -8,4 +8,13 @@ export const Container = styled.span`
 
     color: ${({theme}) => theme.COLORS.TAGS_COLOR};
     background: ${({theme}) => theme.COLORS.TAGS} ;
+
+    cursor: pointer;
+`
+
+export const Hover = styled.span`
+    span:hover {
+        filter: brightness(0.9);
+        transition: filter 300ms;
+    }
 `

@@ -39,9 +39,10 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     
-    > button:first-child {
+    > header {
+        > button:first-child {
         align-self: start;
-    }
+        }
 
     > h1 {
         margin-top: 3rem;
@@ -52,9 +53,10 @@ export const Content = styled.div`
         font-weight: 500;
         
         display: flex;
+        }
     }
 
-    > div {
+    > .subtitle {
         display: flex;
         align-items: center;
         gap: 2rem;
@@ -78,13 +80,16 @@ export const Content = styled.div`
         }
     }
 
-    > section {
+    > .tags {
         margin: 4rem 0;
     }
 
-    > p {
+    > .text {
         font-size: 1.6rem;
-        margin-bottom: 2rem;
         text-align: justify;
+
+        p {
+            margin-bottom: 2rem;
+        }
     }
 `
