@@ -1,6 +1,6 @@
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi'
 
-import { Container, Form, Avatar } from "./styles";
+import { Container, Header, Form, Avatar } from "./styles";
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
@@ -8,7 +8,9 @@ export function Profile() {
   return (
     <Container>
       <header>
-        <FiArrowLeft /> <p>Voltar</p>
+        <Header to='/'>
+          <FiArrowLeft /> <p>Voltar</p>
+        </Header>
       </header>
 
       <Form>

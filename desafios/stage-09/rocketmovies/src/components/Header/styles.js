@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.header`
     grid-area: header;
@@ -18,7 +19,7 @@ export const Container = styled.header`
 
 `
 
-export const Brand = styled.h1`
+export const Brand = styled(Link)`
     font-size: 2.4rem;
     font-weight: 500;
     color: ${({theme}) => theme.COLORS.PINK};
@@ -46,7 +47,7 @@ export const Profile = styled.div`
     display: flex;
     align-items: center;
 
-    > img {
+    img {
         width: 5.6rem;
         height: 5.6rem;
         border-radius: 50%;

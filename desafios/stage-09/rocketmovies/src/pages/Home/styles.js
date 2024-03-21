@@ -37,7 +37,7 @@ export const Title = styled.div`
 
     padding: 2rem 12.5rem;
 
-    > button {
+    button {
         width: 22rem;
     }
 `
@@ -50,4 +50,9 @@ export const Content = styled.div`
         margin-top: -5rem;
     }
 
+    footer {
+        span {
+            margin-right: 0;
+        }
+    }
 `

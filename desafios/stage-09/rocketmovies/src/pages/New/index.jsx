@@ -1,4 +1,6 @@
 import { FiArrowLeft } from "react-icons/fi";
+import { Link } from 'react-router-dom'
+
 import { Header } from "../../components/Header"
 import { Input } from "../../components/Input"
 import { ButtonText } from "../../components/ButtonText"
@@ -17,7 +19,9 @@ export function New(){
             <main>
                 <Form>
                     <header>
-                        <ButtonText title='Voltar' icon={FiArrowLeft} />
+                        <Link to='/'>
+                            <ButtonText title='Voltar' icon={FiArrowLeft} />
+                        </Link>
                         <h1>Novo filme</h1>
                     </header>
 

@@ -1,9 +1,12 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div `
   width: 100%;
 
-  > header {
+`
+
+export const Header = styled(Link)`
     width: 100%;
     height: 14.4rem;
 
@@ -21,7 +24,6 @@ export const Container = styled.div `
       font-size: 2.4rem;
       margin-right: .5rem;
     }
-  }
 `
 
 export const Form = styled.form `

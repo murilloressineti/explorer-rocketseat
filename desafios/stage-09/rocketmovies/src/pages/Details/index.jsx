@@ -1,7 +1,8 @@
-import { Container, Content } from "./styles.js"
+import { Link } from 'react-router-dom'
 import { FiArrowLeft } from "react-icons/fi";
 import { LuClock3 } from "react-icons/lu";
 
+import { Container, Content } from "./styles.js"
 import { Header } from "../../components/Header"
 import { Tag } from "../../components/Tag"
 import { ButtonText } from "../../components/ButtonText"
@@ -15,7 +16,9 @@ export function Details() {
       <main>
         <Content>
           <header>
-            <ButtonText title='Voltar' icon={FiArrowLeft} />
+            <Link to='/'>
+              <ButtonText title='Voltar' icon={FiArrowLeft} />
+            </Link>
             
             <h1>
               Interstellar
