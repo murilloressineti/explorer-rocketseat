@@ -1,8 +1,39 @@
-# React + Vite
+<h1 align="center">RocketMovies</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+Desafio do Stage 09 - Introdução ao ReactJS<br/>
+Nesta etapa, concentrei-me na criação do front-end do projeto, permitindo a interface visual para que o usuário cadastre filmes e preencha informações como nome, descrição e nota, além de criar tags relacionadas.
 
-Currently, two official plugins are available:
+Utilizei o ViteJS para estruturar o projeto de forma eficiente, styled-components para estilização, e React Router para navegação, garantindo uma experiência de usuário intuitiva e agradável.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
+
+## 🛠 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- ReactJS
+- ViteJS
+- Styled Components
+- React Router
+
+## 💻 Projeto
+
+<img src="src/assets/login.png"/>
+
+## ⚙️ Utilização
+
+1. instale as dependências com: ``` cd rocketmovies ```
+2. inicie o projeto com: ``` npm install ```
+3. execute a migrations para criação do banco de dados: ``` npm run dev```
+
+## 📝 Licença
+
+Esse projeto está sob a licença MIT.
+
+## 🙋🏻‍♂️ Autor
+
+Feito com 💙 por Murillo Ressineti.
+
+[![Linkedin Badge](https://img.shields.io/badge/-Murillo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/murilloressineti/)](https://www.linkedin.com/in/murilloressineti/)
