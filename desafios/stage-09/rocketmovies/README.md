@@ -2,8 +2,7 @@
 
 <p align="center">
 Desafio do Stage 09 - Introdução ao ReactJS<br/>
-Nesta etapa, concentrei-me na criação do front-end do projeto, permitindo a interface visual para que o usuário cadastre filmes e preencha informações como nome, descrição e nota, além de criar tags relacionadas.
-
+Nesta etapa, concentrei-me na criação do front-end do projeto, permitindo a interface visual para que o usuário cadastre filmes e preencha informações como nome, descrição e nota, além de criar tags relacionadas.<br/><br/>
 Utilizei o ViteJS para estruturar o projeto de forma eficiente, styled-components para estilização, e React Router para navegação, garantindo uma experiência de usuário intuitiva e agradável.
 </p>
 

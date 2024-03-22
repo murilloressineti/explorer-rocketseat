@@ -2,8 +2,7 @@
 
 <p align="center">
 Desafio do Stage 08 - Introdução ao Node.js<br/>
-Criação de um projeto em Node.js onde o usuário cadastra um filme, preenche com algumas informações (nome, descrição, nota) e cria tags relacionadas a ele.
-
+Criação de um projeto em Node.js onde o usuário cadastra um filme, preenche com algumas informações (nome, descrição, nota) e cria tags relacionadas a ele.<br/><br/>
 Neste desafio, busquei explorar os fundamentos do Node.js para desenvolver uma aplicação de cadastro de filmes. O usuário terá a liberdade de cadastrar informações básicas do filme, como título, descrição e nota, além de poder associar tags relevantes para melhor categorizá-lo.
 </p>
 
