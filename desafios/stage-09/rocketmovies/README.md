@@ -23,9 +23,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## ⚙️ Utilização
 
-1. instale as dependências com: ``` cd rocketmovies ```
-2. inicie o projeto com: ``` npm install ```
-3. execute a migrations para criação do banco de dados: ``` npm run dev```
+1. selecione a pasta do projeto: ``` cd rocketmovies ```
+2. instale as dependências com: ``` npm install ```
+3. inicie o projeto com: ``` npm run dev```
 
 ## 📝 Licença
 
