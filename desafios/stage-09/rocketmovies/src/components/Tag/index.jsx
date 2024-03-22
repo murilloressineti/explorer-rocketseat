@@ -1,11 +1,9 @@
-import { Container, Hover } from "./styles";
+import { Container} from "./styles";
 
 export function Tag({ title, ...rest }){
     return (
-        <Hover>
-            <Container {...rest} >
-                {title}
-            </Container>
-        </Hover>
+        <Container {...rest} >
+            {title}
+        </Container>
     )
 }

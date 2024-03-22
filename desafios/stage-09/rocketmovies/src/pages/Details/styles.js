@@ -82,6 +82,11 @@ export const Content = styled.div`
 
     > .tags {
         margin: 4rem 0;
+
+        span:hover {
+            filter: brightness(0.9);
+            transition: filter 300ms;
+        }
     }
 
     > .text {

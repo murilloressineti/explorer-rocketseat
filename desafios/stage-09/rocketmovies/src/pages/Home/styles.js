@@ -49,10 +49,14 @@ export const Content = styled.div`
     > button:first-child {
         margin-top: -5rem;
     }
-
-    footer {
-        span {
-            margin-right: 0;
-        }
+    
+    span {
+        margin-right: .8;
     }
+
+    span:hover {
+        filter: brightness(0.9);
+        transition: filter 300ms;
+    }
+    
 `

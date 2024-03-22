@@ -11,10 +11,3 @@ export const Container = styled.span`
 
     cursor: pointer;
 `
-
-export const Hover = styled.span`
-    span:hover {
-        filter: brightness(0.9);
-        transition: filter 300ms;
-    }
-`
