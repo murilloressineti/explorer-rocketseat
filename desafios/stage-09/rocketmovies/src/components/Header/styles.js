@@ -66,6 +66,12 @@ export const Profile = styled.div`
             color: ${({theme}) => theme.COLORS.GRAY_300}
         }
 
+        span:hover{
+            filter: brightness(0.9);
+            transition: filter 300ms;
+            cursor: pointer;
+        }
+
         strong {
             font-size: 1.8rem;
             color: ${({theme}) => theme.COLORS.GRAY_100}
