@@ -1,4 +1,3 @@
-const { query } = require("express");
 const knex = require("../database/knex");
 const AppError = require("../utils/AppError");
 
@@ -7,8 +6,8 @@ class MoviesController {
     const { title, description, rating, tags } = request.body
     const user_id = request.user.id
 
-    if (rating < 1 || rating > 5) {
-        throw new AppError(`O valor do campo 'rating' deve estar entre 1 e 5.`)
+    if (rating < 0 || rating > 5) {
+        throw new AppError(`O valor do campo 'rating' deve estar entre 0 e 5.`)
     }
 
     const [note_id] = await knex("MovieNotes").insert({

@@ -1,11 +1,16 @@
 import { Container, Brand, Search, Profile } from './styles'
 
 import { useAuth } from '../../hooks/auth'
+import { api } from '../../services/api';
+import avatarPlaceholder from '../../assets/avatar-placeholder.png'
 
 import { Link } from "react-router-dom";
 
 export function Header(){
-    const { signOut } = useAuth()
+    const { signOut, user } = useAuth()
+
+    const avatarURL = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
+
     return(
         <Container>
             <Brand to='/'>RocketMovies</Brand>
@@ -16,12 +21,12 @@ export function Header(){
             <Profile>
                 <div>
                     <Link to='/profile'>
-                        <strong>Murillo Ressineti</strong>
+                        <strong>{user.name}</strong>
                     </Link>
                     <span onClick={signOut}>sair</span>
                 </div>
                 <Link to='/profile'>
-                    <img src="https://github.com/murilloressineti.png" alt="Foto do usuário" />
+                    <img src={avatarURL} alt="Foto do usuário" />
                 </Link>
             </Profile>
         </Container>
