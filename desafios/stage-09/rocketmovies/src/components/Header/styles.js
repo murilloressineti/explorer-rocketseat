@@ -25,22 +25,11 @@ export const Brand = styled(Link)`
     color: ${({theme}) => theme.COLORS.PINK};
 `
 
-export const Search = styled.input`
-    flex: 1;
-
-    height: 5.6rem;
-    width: 100%;
-
-    margin: 0 6.4rem;
-    padding: 2rem 2.4rem;
-    
-    background-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
-    color: ${({theme}) => theme.COLORS.GRAY_300};
-    border: none;
-    border-radius: 1rem;
-
-    font-size: 1.4rem;
-
+export const Search = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 0 6.4rem;
+    flex-grow: 1;
 `
 
 export const Profile = styled.div`

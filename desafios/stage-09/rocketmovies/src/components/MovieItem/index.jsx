@@ -4,7 +4,7 @@ import { Container } from './styles'
 
 export function MovieItem({ isNew, value, onClick, ...rest }){
     return(
-        <Container isNew={isNew}>
+        <Container>
             <input 
                 type="text" 
                 value={value}

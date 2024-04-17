@@ -97,4 +97,8 @@ export const Content = styled.div`
             margin-bottom: 2rem;
         }
     }
+
+    > button {
+        margin-top: 3rem;
+    }
 `

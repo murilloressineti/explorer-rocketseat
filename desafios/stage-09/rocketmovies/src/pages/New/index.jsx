@@ -25,10 +25,6 @@ export function New(){
 
     const navigate = useNavigate()
 
-    function handleBack(){
-        navigate(-1)
-      }
-
     function handleAddTag(){
         setTags(prevState => [...prevState, newTag])
         setNewTag('')
@@ -53,15 +49,15 @@ export function New(){
         return alert('Você deixou uma tag no campo para adicionar, mas não clicou em adicionar. Clique para adicionar ou deixe o campo vazio.');
       }
 
-      await api.post('/MovieNotes', {
+      alert('Filme adicionado com sucesso!');
+      navigate(-1); 
+
+      await api.post('/movies', {
         title,
         description,
         rating,
         tags
       });
-
-      alert('Filme adicionado com sucesso!');
-      navigate(-1); 
     }
 
     function handleDiscardMovie() {
@@ -76,12 +72,14 @@ export function New(){
     
     return(
         <Container>
-            <Header/>
+            <Header>
+              <Input placeholder="Pesquisar pelo título" />
+            </Header>
 
             <main>
                 <Form>
                     <header>
-                        <ButtonText title='Voltar' icon={FiArrowLeft} onClick={handleBack}/>
+                        <ButtonText title='Voltar' icon={FiArrowLeft} onClick={handleDiscardMovie}/>
 
                         <h1>Novo filme</h1>
                     </header>
@@ -89,7 +87,7 @@ export function New(){
                     <div className="inputs">
                         <Input 
                             placeholder='Título'
-                            onChange={e => setTitle(e.target.value)}
+                            onChange={(e) => setTitle(e.target.value)}
                         />
 
                         <Input
@@ -98,13 +96,13 @@ export function New(){
                             min='0'
                             max='5'
                             value={rating}
-                            onChange={e => setRating(e.target.value)}
+                            onChange={(e) => setRating(e.target.value)}
                         />
                     </div>
 
                     <Textarea 
                         placeholder='Observações'
-                        onChange={e => setDescription(e.target.value)}
+                        onChange={(e) => setDescription(e.target.value)}
                     />
 
                     <Section title='Marcadores'>
@@ -122,7 +120,7 @@ export function New(){
                                 isNew
                                 placeholder='Novo Marcador'
                                 value={newTag}
-                                onChange={e => setNewTag(e.target.value)}
+                                onChange={(e) => setNewTag(e.target.value)}
                                 onClick={handleAddTag}
                             />
                         </div>

@@ -6,17 +6,15 @@ import avatarPlaceholder from '../../assets/avatar-placeholder.png'
 
 import { Link } from "react-router-dom";
 
-export function Header(){
+export function Header({ children }){
     const { signOut, user } = useAuth()
 
     const avatarURL = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
-
     return(
         <Container>
             <Brand to='/'>RocketMovies</Brand>
             
-            <Search placeholder="Pesquisar pelo título">
-            </Search>
+            <Search>{children}</Search>
             
             <Profile>
                 <div>
