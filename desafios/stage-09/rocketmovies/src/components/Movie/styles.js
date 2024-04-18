@@ -5,7 +5,7 @@ export const Container = styled.button`
     padding: 3.2rem;
     margin-bottom: 2.4rem;
 
-    width: 110rem; 
+    min-width: 110rem;
 
     border: none;
     border-radius: 1.6rem;
@@ -32,6 +32,7 @@ export const Container = styled.button`
         text-align: justify;
         color: ${({theme}) => theme.COLORS.GRAY_400};
         margin-bottom: 3rem;
+        white-space: pre-line;
     }
 
     footer {

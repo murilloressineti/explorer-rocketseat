@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import { Stars } from "../Stars"
+import { Rating } from "../Rating"
 import { Tag } from "../Tag";
 
 export function Movie({ data, ...rest }) {
@@ -7,7 +7,7 @@ export function Movie({ data, ...rest }) {
         <Container {...rest}>
             <h1>
                 {data.title}
-                <Stars></Stars>
+                <Rating grade={data.rating}/>
             </h1>
 
             <p>

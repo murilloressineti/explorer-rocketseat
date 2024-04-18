@@ -60,21 +60,22 @@ export const Content = styled.div`
         display: flex;
         align-items: center;
         gap: 2rem;
+        font-size: 1.2rem;
 
         > span {
             font-family: "Roboto", sans-serif;
         }
 
         > img {
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         border-radius: 50%;
         border: .1rem solid ${({theme}) => theme.COLORS.GRAY_500};;
-        margin-right: -1rem;
+        margin-right: -1.2rem;
         }
 
         > svg {
-            margin-right: -1rem;
+            margin-right: -1.2rem;
             color: ${({theme}) => theme.COLORS.PINK};
             font-size: 2rem;
         }
@@ -95,6 +96,7 @@ export const Content = styled.div`
 
         p {
             margin-bottom: 2rem;
+            white-space: pre-line;
         }
     }
 

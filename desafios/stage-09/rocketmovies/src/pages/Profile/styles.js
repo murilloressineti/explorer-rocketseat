@@ -1,29 +1,18 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom';
 
 export const Container = styled.div `
   width: 100%;
-
 `
 
-export const Header = styled(Link)`
+export const Header = styled.div`
     width: 100%;
     height: 14.4rem;
-
-    background: ${({ theme }) => theme.COLORS.PINK_OPACITY};
 
     display: flex;
     align-items: center;
 
     padding: 0 12.4rem;
 
-    color: ${({ theme }) => theme.COLORS.PINK};
-
-    svg {
-      color: ${({ theme }) => theme.COLORS.PINK};
-      font-size: 2.4rem;
-      margin-right: .5rem;
-    }
 `
 
 export const Form = styled.form `
@@ -32,6 +21,10 @@ export const Form = styled.form `
 
   > div:nth-child(4) {
     margin-top: 2.4rem;
+  }
+
+  input {
+    height: 5rem;
   }
 `
 
@@ -44,8 +37,8 @@ export const Avatar = styled.div `
   
   > img {
     border-radius: 50%;
-    width: 18.6rem;
-    height: 18.6rem;
+    width: 100%;
+    height: auto;
   }
 
   > label {

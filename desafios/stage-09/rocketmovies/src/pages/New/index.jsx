@@ -61,10 +61,14 @@ export function New(){
     }
 
     function handleDiscardMovie() {
-      const userConfirmation = confirm(
-        "Todas as alterações serão perdidas... Tem certeza que deseja descartar as alterações?"
-      );
-  
+      const anyFieldFilled = !!title.trim() || !!description.trim() || !!rating.trim() || tags.length > 0
+
+      let userConfirmation = true
+
+      if (anyFieldFilled) {
+        userConfirmation = confirm('Todas as alterações serão perdidas... Tem certeza que deseja descartar as alterações?')
+      }
+
       if (userConfirmation) {
         navigate(-1);
       }
