@@ -14,7 +14,8 @@ import { Header } from "../../components/Header"
 import { Input } from "../../components/Input"
 import { Tag } from "../../components/Tag"
 import { ButtonText } from "../../components/ButtonText"
-import { Rating } from "../../components/Rating/index.jsx"
+import { Rating } from "../../components/Rating/index"
+import { Textarea } from "../../components/Textarea"
 
 export function Details() {
 
@@ -25,11 +26,20 @@ export function Details() {
   const [data, setData] = useState(null)
   const [createdAt, setCreatedAt] = useState(null)
 
+  const [isEditing, setIsEditing] = useState(false);
+  const [editedDescription, setEditedDescription] = useState('');
+
   const params = useParams()
   const navigate = useNavigate()
 
   function handleBack(){
     navigate(-1)
+  }
+
+  async function handleSaveDescription() {
+    await api.put(`/movies/${params.id}`, { description: editedDescription });
+    setData((prevData) => ({ ...prevData, description: editedDescription }));
+    setIsEditing(false);
   }
 
   async function handleRemove(){
@@ -49,10 +59,11 @@ export function Details() {
       const formattedDateTime = format(new Date(response.data.created_at), 'dd/MM/yy \'às\' HH:mm');
       setCreatedAt(formattedDateTime);
 
+      setEditedDescription(response.data.description)
     }
 
     fetchMovies()
-  }, [])
+  }, [params.id])
 
   return (
     <Container>
@@ -94,14 +105,35 @@ export function Details() {
               </section>
             }
 
-            <section className="text">
-              <p>{data.description}</p>
-            </section>
+            {
+              isEditing ? (
+                <section className="text">
+                  <Textarea
+                    value={editedDescription}
+                    onChange={(e) => setEditedDescription(e.target.value)}
+                  />
+                  <ButtonText title="Salvar" onClick={handleSaveDescription} />
+                </section>
+            ) : (
+                <section className="text">
+                  <p>{data.description}</p>
 
-            <ButtonText 
-              title='Excluir filme'
-              onClick={handleRemove}
-            />
+                  <div>
+                    <ButtonText
+                    title="Editar descrição"
+                    onClick={() => setIsEditing(true)}
+                  />
+
+                    <ButtonText 
+                      title='Excluir filme'
+                      onClick={handleRemove}
+                    />
+                  </div>
+                  
+                </section>
+            )}
+
+            
           </Content>
         </main>
       }

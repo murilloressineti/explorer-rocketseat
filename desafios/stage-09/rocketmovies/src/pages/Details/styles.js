@@ -95,8 +95,19 @@ export const Content = styled.div`
         text-align: justify;
 
         p {
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
             white-space: pre-line;
+        }
+
+        textarea {
+            width: 110rem;
+            height: 27.5rem;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
         }
     }
 

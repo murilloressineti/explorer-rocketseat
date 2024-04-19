@@ -4,11 +4,12 @@ import { Container } from './styles';
 
 export function MovieItem({ isNew, value, onClick, onChange, maxLength = 50, ...rest }) {
     const inputRef = useRef(null);
-    const [inputWidth, setInputWidth] = useState('auto');
+    const [inputWidth, setInputWidth] = useState('16rem');
   
     useEffect(() => {
       if (inputRef.current) {
-        setInputWidth(`${inputRef.current.scrollWidth / 16}rem`);
+        const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize)
+        setInputWidth(`${inputRef.current.scrollWidth / rootFontSize}rem`);
       }
     }, [value]);
   
@@ -17,7 +18,8 @@ export function MovieItem({ isNew, value, onClick, onChange, maxLength = 50, ...
     const handleInputChange = (e) => {
       const inputValue = e.target.value;
       if (inputValue.length <= maxLength) {
-        setInputWidth(`${inputRef.current.scrollWidth / 16}rem`);
+        const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+        setInputWidth(`${inputRef.current.scrollWidth / rootFontSize}rem`);
         onChange(e);
       }
     };

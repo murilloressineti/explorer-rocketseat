@@ -28,7 +28,7 @@ export const Container = styled.div`
 
         border: none;
 
-        min-width: 16rem;
+        width: 100%;
 
         &::placeholder {
         color: ${({ theme }) => theme.COLORS.GRAY_300};

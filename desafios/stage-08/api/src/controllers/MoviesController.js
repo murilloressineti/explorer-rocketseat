@@ -44,6 +44,23 @@ class MoviesController {
     )
   }
 
+  async update(request, response) {
+    const { id } = request.params;
+    const { description } = request.body;
+  
+    const movieNote = await knex("MovieNotes").where({ id }).first();
+  
+    if (!movieNote) {
+      throw new AppError("Filme não encontrado.", 404);
+    }
+  
+    await knex("MovieNotes")
+      .where({ id })
+      .update({ description });
+  
+    return response.json({ message: "Descrição do filme atualizada com sucesso." });
+  }
+
   async delete(request, response) {
     const {id} = request.params
 

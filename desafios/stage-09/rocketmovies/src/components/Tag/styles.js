@@ -8,6 +8,4 @@ export const Container = styled.span`
 
     color: ${({theme}) => theme.COLORS.TAGS_COLOR};
     background: ${({theme}) => theme.COLORS.TAGS} ;
-
-    cursor: pointer;
 `
