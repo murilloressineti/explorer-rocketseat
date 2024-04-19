@@ -26,9 +26,20 @@ export function New(){
     const navigate = useNavigate()
 
     function handleAddTag(){
-        setTags(prevState => [...prevState, newTag])
-        setNewTag('')
-    }
+      if (newTag.trim() === '') {
+          return;
+      }
+
+      if (newTag.includes(' ')) {
+          alert('A tag não pode conter espaços no meio.');
+          return;
+      }
+  
+      const trimmedTag = newTag.trim();
+  
+      setTags(prevState => [...prevState, trimmedTag]);
+      setNewTag('');
+  }
 
     function handleRemoveTag(deleted) {
         setTags(prevState => prevState.filter(tag => tag !== deleted))

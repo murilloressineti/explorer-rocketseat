@@ -53,7 +53,15 @@ export const Content = styled.div`
         font-weight: 500;
         
         display: flex;
-        }
+    }
+
+    div {
+        height: 5.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     }
 
     > .subtitle {
@@ -104,14 +112,17 @@ export const Content = styled.div`
             height: 27.5rem;
         }
 
+    }
+
+    > button {
+        margin-top: 3rem;
+    }
+
+    .buttons {
         div {
             display: flex;
             flex-direction: row;
             gap: 4rem;
         }
-    }
-
-    > button {
-        margin-top: 3rem;
     }
 `
