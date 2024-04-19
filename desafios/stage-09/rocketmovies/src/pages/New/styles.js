@@ -41,6 +41,15 @@ export const Container = styled.div`
             color: ${({theme}) => theme.COLORS.PINK};
         }
     }
+
+    ::-webkit-scrollbar {
+    width: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: ${({theme}) => theme.COLORS.PINK};; 
+    border-radius: 1rem;
+    }
 `
 
 export const Form = styled.form`

@@ -78,7 +78,7 @@ export function Details() {
       setEditedTitle(response.data.title);
       setEditedDescription(response.data.description);
       setEditedRating(response.data.rating);
-      setEditedTags(response.data.tags.map((tag) => ({ ...tag, name: tag.name.trim() }))); // Remove espaços em branco
+      setEditedTags(response.data.tags.map((tag) => ({ ...tag, name: tag.name.trim() }))); 
     }
     fetchMovies();
   }, [params.id]);
@@ -100,8 +100,11 @@ export function Details() {
                 ) : (
                   data.title
                 )}
-                
-                <Rating grade={isEditing ? editedRating : data.rating} />
+                <Rating
+                  grade={isEditing ? editedRating : data.rating}
+                  editable={isEditing}
+                  onChange={(newRating) => setEditedRating(newRating)}
+                />
               </h1>
             </header>
 

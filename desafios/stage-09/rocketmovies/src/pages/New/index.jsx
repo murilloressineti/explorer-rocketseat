@@ -77,7 +77,7 @@ export function New(){
       let userConfirmation = true
 
       if (anyFieldFilled) {
-        userConfirmation = confirm('Todas as alterações serão perdidas... Tem certeza que deseja descartar as alterações?')
+        userConfirmation = confirm('Tem certeza que deseja sair sem salvar as alterações?')
       }
 
       if (userConfirmation) {
