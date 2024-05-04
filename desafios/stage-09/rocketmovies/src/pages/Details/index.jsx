@@ -32,13 +32,17 @@ export function Details() {
   const params = useParams();
   const navigate = useNavigate();
 
-  const handleBack = () => {
-    if (isEditing) {
-      setIsEditing(false);
-    } else {
+  const handleDiscardMovie = () => {
+    let userConfirmation = true
+
+    if (userConfirmation) {
+      userConfirmation = confirm('Tem certeza que deseja sair sem salvar as alterações?')
+    }
+
+    if (userConfirmation) {
       navigate(-1);
     }
-  };
+  }
 
   const handleSaveChanges = async () => {
     const confirmSave = window.confirm('Deseja realmente salvar estas alterações?');
@@ -93,7 +97,7 @@ export function Details() {
         <main>
           <Content>
             <header>
-              <ButtonText title="Voltar" icon={FiArrowLeft} onClick={handleBack} />
+              <ButtonText title="Voltar" icon={FiArrowLeft} onClick={handleDiscardMovie} />
               <h1>
                 {isEditing ? (
                   <Input value={editedTitle} onChange={(e) => setEditedTitle(e.target.value)} />
