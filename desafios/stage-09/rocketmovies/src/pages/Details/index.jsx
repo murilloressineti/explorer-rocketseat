@@ -1,31 +1,33 @@
-import { useNavigate, useParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import { format } from 'date-fns';
+import { useNavigate, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { format } from "date-fns";
 
-import { useAuth } from '../../hooks/auth';
-import { api } from '../../services/api.js';
-import avatarPlaceholder from '../../assets/avatar-placeholder.png';
+import { useAuth } from "../../hooks/auth";
+import { api } from "../../services/api.js";
+import avatarPlaceholder from "../../assets/avatar-placeholder.png";
 
-import { FiArrowLeft } from 'react-icons/fi';
-import { LuClock3 } from 'react-icons/lu';
+import { FiArrowLeft } from "react-icons/fi";
+import { LuClock3 } from "react-icons/lu";
 
-import { Container, Content } from './styles.js';
-import { Header } from '../../components/Header';
-import { Input } from '../../components/Input';
-import { Tag } from '../../components/Tag';
-import { ButtonText } from '../../components/ButtonText';
-import { Rating } from '../../components/Rating/index';
-import { Textarea } from '../../components/Textarea';
+import { Container, Content } from "./styles.js";
+import { Header } from "../../components/Header";
+import { Input } from "../../components/Input";
+import { Tag } from "../../components/Tag";
+import { ButtonText } from "../../components/ButtonText";
+import { Rating } from "../../components/Rating/index";
+import { Textarea } from "../../components/Textarea";
 
 export function Details() {
   const { user } = useAuth();
-  const avatarURL = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder;
+  const avatarURL = user.avatar
+    ? `${api.defaults.baseURL}/files/${user.avatar}`
+    : avatarPlaceholder;
 
   const [data, setData] = useState(null);
   const [createdAt, setCreatedAt] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
-  const [editedTitle, setEditedTitle] = useState('');
-  const [editedDescription, setEditedDescription] = useState('');
+  const [editedTitle, setEditedTitle] = useState("");
+  const [editedDescription, setEditedDescription] = useState("");
   const [editedRating, setEditedRating] = useState(0);
   const [editedTags, setEditedTags] = useState([]);
 
@@ -33,19 +35,23 @@ export function Details() {
   const navigate = useNavigate();
 
   const handleDiscardMovie = () => {
-    let userConfirmation = true
+    let userConfirmation = true;
 
     if (userConfirmation) {
-      userConfirmation = confirm('Tem certeza que deseja sair sem salvar as alterações?')
+      userConfirmation = confirm(
+        "Tem certeza que deseja sair sem salvar as alterações?"
+      );
     }
 
     if (userConfirmation) {
       navigate(-1);
     }
-  }
+  };
 
   const handleSaveChanges = async () => {
-    const confirmSave = window.confirm('Deseja realmente salvar estas alterações?');
+    const confirmSave = window.confirm(
+      "Deseja realmente salvar estas alterações?"
+    );
     if (confirmSave) {
       await api.put(`/movies/${params.id}`, {
         title: editedTitle,
@@ -66,7 +72,7 @@ export function Details() {
   };
 
   async function handleRemove() {
-    const confirm = window.confirm('Deseja realmente remover o filme?');
+    const confirm = window.confirm("Deseja realmente remover o filme?");
     if (confirm) {
       await api.delete(`/movies/${params.id}`);
       navigate(-1);
@@ -77,12 +83,17 @@ export function Details() {
     async function fetchMovies() {
       const response = await api.get(`/movies/${params.id}`);
       setData(response.data);
-      const formattedDateTime = format(new Date(response.data.created_at), "'Criado em:' dd/MM/yy 'às' HH:mm");
+      const formattedDateTime = format(
+        new Date(response.data.created_at),
+        "'Criado em:' dd/MM/yy 'às' HH:mm"
+      );
       setCreatedAt(formattedDateTime);
       setEditedTitle(response.data.title);
       setEditedDescription(response.data.description);
       setEditedRating(response.data.rating);
-      setEditedTags(response.data.tags.map((tag) => ({ ...tag, name: tag.name.trim() }))); 
+      setEditedTags(
+        response.data.tags.map((tag) => ({ ...tag, name: tag.name.trim() }))
+      );
     }
     fetchMovies();
   }, [params.id]);
@@ -97,10 +108,17 @@ export function Details() {
         <main>
           <Content>
             <header>
-              <ButtonText title="Voltar" icon={FiArrowLeft} onClick={handleDiscardMovie} />
+              <ButtonText
+                title="Voltar"
+                icon={FiArrowLeft}
+                onClick={handleDiscardMovie}
+              />
               <h1>
                 {isEditing ? (
-                  <Input value={editedTitle} onChange={(e) => setEditedTitle(e.target.value)} />
+                  <Input
+                    value={editedTitle}
+                    onChange={(e) => setEditedTitle(e.target.value)}
+                  />
                 ) : (
                   data.title
                 )}
@@ -123,10 +141,15 @@ export function Details() {
               {isEditing ? (
                 <Input
                   placeholder="Tags (separe por vírgula)"
-                  value={editedTags.map((tag) => tag.name).join(',')}
+                  value={editedTags.map((tag) => tag.name).join(",")}
                   onChange={(e) =>
                     setEditedTags(
-                      e.target.value.split(',').map((tagName) => ({ id: Math.random(), name: tagName.trim() }))
+                      e.target.value
+                        .split(",")
+                        .map((tagName) => ({
+                          id: Math.random(),
+                          name: tagName.trim(),
+                        }))
                     )
                   }
                 />
@@ -137,7 +160,10 @@ export function Details() {
 
             <section className="text">
               {isEditing ? (
-                <Textarea value={editedDescription} onChange={(e) => setEditedDescription(e.target.value)} />
+                <Textarea
+                  value={editedDescription}
+                  onChange={(e) => setEditedDescription(e.target.value)}
+                />
               ) : (
                 <p>{data.description}</p>
               )}
@@ -148,7 +174,10 @@ export function Details() {
                 <ButtonText title="Salvar" onClick={handleSaveChanges} />
               ) : (
                 <div>
-                  <ButtonText title="Editar filme" onClick={() => setIsEditing(true)} />
+                  <ButtonText
+                    title="Editar filme"
+                    onClick={() => setIsEditing(true)}
+                  />
                   <ButtonText title="Excluir filme" onClick={handleRemove} />
                 </div>
               )}

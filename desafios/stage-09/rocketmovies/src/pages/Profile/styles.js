@@ -1,21 +1,20 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
   width: 100%;
-`
+`;
 
 export const Header = styled.div`
-    width: 100%;
-    height: 14.4rem;
+  width: 100%;
+  height: 14.4rem;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    padding: 0 12.4rem;
+  padding: 0 12.4rem;
+`;
 
-`
-
-export const Form = styled.form `
+export const Form = styled.form`
   max-width: 34rem;
   margin: 3rem auto 0;
 
@@ -26,15 +25,15 @@ export const Form = styled.form `
   input {
     height: 5rem;
   }
-`
+`;
 
-export const Avatar = styled.div `
+export const Avatar = styled.div`
   position: relative;
   margin: -12.4rem auto 3.2rem;
 
   width: 18.6rem;
   height: 18.6rem;
-  
+
   > img {
     border-radius: 50%;
     width: 100%;
@@ -53,8 +52,8 @@ export const Avatar = styled.div `
     justify-content: center;
 
     position: absolute;
-    bottom: .7rem;
-    right: .7rem;
+    bottom: 0.7rem;
+    right: 0.7rem;
 
     cursor: pointer;
 
@@ -68,4 +67,4 @@ export const Avatar = styled.div `
       color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     }
   }
-`
+`;

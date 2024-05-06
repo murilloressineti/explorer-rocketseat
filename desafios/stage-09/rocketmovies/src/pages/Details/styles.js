@@ -1,128 +1,125 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-    display: grid;
-    grid-template-rows: 11.5rem auto;
-    grid-template-areas: 
+  display: grid;
+  grid-template-rows: 11.5rem auto;
+  grid-template-areas:
     "header"
     "content";
 
-    > main {
-        grid-area: content;
-        overflow-y: scroll;
-        padding: 6.4rem 0;
+  > main {
+    grid-area: content;
+    overflow-y: scroll;
+    padding: 6.4rem 0;
 
-        overflow-y: auto;
+    overflow-y: auto;
 
-        margin: 0 auto;
-        padding-right: 1.6rem;
-    }
+    margin: 0 auto;
+    padding-right: 1.6rem;
+  }
 
-    ::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 1rem;
-    }
+  }
 
-    ::-webkit-scrollbar-thumb {
-    background: ${({theme}) => theme.COLORS.PINK};; 
+  ::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.COLORS.PINK};
     border-radius: 1rem;
-    }
-
-`
+  }
+`;
 
 export const Content = styled.div`
-    max-width: 110rem;
-    margin: 0 auto;
+  max-width: 110rem;
+  margin: 0 auto;
 
-    display: flex;
-    flex-direction: column;
-    
-    > header {
-        > button:first-child {
-        align-self: start;
-        }
+  display: flex;
+  flex-direction: column;
+
+  > header {
+    > button:first-child {
+      align-self: start;
+    }
 
     > h1 {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
 
-        color: ${({theme}) => theme.COLORS.GRAY_100};
-        font-size: 3.6rem;
-        font-weight: 500;
-        
-        display: flex;
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
+      font-size: 3.6rem;
+      font-weight: 500;
+
+      display: flex;
     }
 
     div {
-        height: 5.5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      height: 5.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  > .subtitle {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+
+    > span {
+      font-family: "Roboto", sans-serif;
     }
 
+    > img {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: 0.1rem solid ${({ theme }) => theme.COLORS.GRAY_500};
+      margin-right: -1.2rem;
     }
 
-    > .subtitle {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        font-size: 1.2rem;
+    > svg {
+      margin-right: -1.2rem;
+      color: ${({ theme }) => theme.COLORS.PINK};
+      font-size: 2rem;
+    }
+  }
 
-        > span {
-            font-family: "Roboto", sans-serif;
-        }
+  > .tags {
+    margin: 4rem 0;
 
-        > img {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        border: .1rem solid ${({theme}) => theme.COLORS.GRAY_500};;
-        margin-right: -1.2rem;
-        }
+    span:hover {
+      filter: brightness(0.9);
+      transition: filter 300ms;
+    }
+  }
 
-        > svg {
-            margin-right: -1.2rem;
-            color: ${({theme}) => theme.COLORS.PINK};
-            font-size: 2rem;
-        }
+  > .text {
+    font-size: 1.6rem;
+    text-align: justify;
+
+    p {
+      margin-bottom: 4rem;
+      white-space: pre-line;
     }
 
-    > .tags {
-        margin: 4rem 0;
-
-        span:hover {
-            filter: brightness(0.9);
-            transition: filter 300ms;
-        }
+    textarea {
+      width: 110rem;
+      height: 27.5rem;
     }
+  }
 
-    > .text {
-        font-size: 1.6rem;
-        text-align: justify;
+  > button {
+    margin-top: 3rem;
+  }
 
-        p {
-            margin-bottom: 4rem;
-            white-space: pre-line;
-        }
-
-        textarea {
-            width: 110rem;
-            height: 27.5rem;
-        }
-
+  .buttons {
+    div {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
     }
-
-    > button {
-        margin-top: 3rem;
-    }
-
-    .buttons {
-        div {
-            display: flex;
-            flex-direction: row;
-            gap: 4rem;
-        }
-    }
-`
+  }
+`;
