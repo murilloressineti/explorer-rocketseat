@@ -42,16 +42,12 @@ export const Title = styled.div`
 
   padding: 2rem 12.5rem;
 
-  button {
-    width: 22rem;
-  }
-
   @media (max-width: 768px) {
-    padding: 2rem 10rem;
-    font-size: 1.2rem;
+    padding: 2rem 2.5rem;
+    font-size: 1.4rem;
 
     button {
-      width: 10rem;
+      width: 20rem;
     }
   }
 `;
